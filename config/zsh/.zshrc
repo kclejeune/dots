@@ -36,20 +36,22 @@ antigen theme agnoster
 
 # Tell Antigen that you're done.
 antigen apply
-
 autoload -Uz compinit
 compinit
+
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
 # add direnv hook for .envrc support
 eval "$(direnv hook zsh)"
-alias weather="curl wttr.in"
 
 # aliases
 alias vim="nvim"
 alias v="nvim"
-export GPG_TTY=/dev/ttys000
+alias venv-create="virtualenv ./venv && echo source venv/bin/activate | tee -a .envrc && direnv allow" 
+alias weather="curl wttr.in"
+alias brewup="brew upgrade && brew cask upgrade && brew cleanup"
 
-# path modifications
+# variable exports
 export PATH=/usr/local/opt/python/libexec/bin:$PATH
+export GPG_TTY=/dev/ttys000
