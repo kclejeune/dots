@@ -1,23 +1,15 @@
-#!/bin/bashOAOBOA
-
-# manage .config symlinking from kclejeune/system repository
-cd ~/ || exit 1
-ln -s ~/system/config/zsh/.zshrc .
-mkdir -p ~/.config ~/.config/kitty ~/.config/nvim
-cd ~/.config || exit 1
-ln -s ~/system/config/kitty/ .
-ln -s ~/system/config/nvim/ .
+#!/bin/bash
 
 # install xcode command line tools
 sudo xcode-select --install
 
-# ensure hoOAOAmebrew installation
+# ensure homebrew installation
 if [ ! -e /usr/local/bin/brew ]; then
-    /OAusr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # install Brewfile contents
-brew bundle install > install_log 
+brew bundle install
 
 # add /usr/local/bin/zsh to acceptable shells and set it as default
 echo /usr/local/bin/zsh | sudo tee -a /etc/shells

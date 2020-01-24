@@ -1,6 +1,3 @@
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-
 source /usr/local/share/antigen/antigen.zsh
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -36,8 +33,6 @@ antigen theme agnoster
 
 # Tell Antigen that you're done.
 antigen apply
+autoload -Uz compinit
+compinit
 
-# add direnv hook for .envrc support
-eval "$(direnv hook zsh)"
-alias weather="curl wttr.in"
-export GPG_TTY=/dev/ttys000

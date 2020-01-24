@@ -5,16 +5,22 @@
         "revision": "c01f464230ba913d4a51d356a80bd52a21fa8caf"
       },
       "homebrew/cask": {
-        "revision": "b0d20fcae596d7b5fa3832ec5cff0111cc6050f3"
+        "revision": "3d13089cb7fe30818efd8dc774cbe35b238e7252"
       },
       "homebrew/cask-fonts": {
         "revision": "dffcec566e99539f44a0eef812fee18b38c5fb0d"
       },
       "homebrew/core": {
-        "revision": "3e76b220bb36f5d5e812b2dfad82bac2fc5883c3"
+        "revision": "57b7feb02ebe38652aa834cfe01b6bcc0474285d"
       },
       "homebrew/aliases": {
         "revision": "338f2a0ff8f55ffa86a55a29d7db3ccea658a98f"
+      },
+      "homebrew/services": {
+        "revision": "f18aed908662863166956e0bc45c18df1bd84dc9"
+      },
+      "koekeishiya/formulae": {
+        "revision": "8118ddef757154d9fdfecedf6bc98df74b4d47ba"
       }
     },
     "brew": {
@@ -1371,22 +1377,22 @@
         }
       },
       "p11-kit": {
-        "version": "0.23.18.1",
+        "version": "0.23.19",
         "bottle": {
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/p11-kit-0.23.18.1.catalina.bottle.tar.gz",
-              "sha256": "a96c1ed51ba62da76ee2e54203670927ecbfc8778b5a1ffaf1593727b48a86b5"
+              "url": "https://homebrew.bintray.com/bottles/p11-kit-0.23.19.catalina.bottle.tar.gz",
+              "sha256": "8cb6adb07849a57acc64fa88ed13951b91c1fb7e4386a28e653733e5f238bc4e"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/p11-kit-0.23.18.1.mojave.bottle.tar.gz",
-              "sha256": "f199520dd64b5a625c5017831de90f4c92b9ec9209623abae292f817d529e0b1"
+              "url": "https://homebrew.bintray.com/bottles/p11-kit-0.23.19.mojave.bottle.tar.gz",
+              "sha256": "fc997181dd3e2f0e7d406e48eee6c324ee280972baa240d4f0887ba441ae7083"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/p11-kit-0.23.18.1.high_sierra.bottle.tar.gz",
-              "sha256": "05548f0cce3d85d4cbff9f98559ea0b14977dc5803c3f2fa6aa1aa7eea306c1e"
+              "url": "https://homebrew.bintray.com/bottles/p11-kit-0.23.19.high_sierra.bottle.tar.gz",
+              "sha256": "7e2249bc81ba4f4eef9b7a996cafbfce79d99504e149c5d350830af5c12da9be"
             }
           }
         }
@@ -3114,7 +3120,7 @@
         }
       },
       "youtube-dl": {
-        "version": "2020.01.15",
+        "version": "2020.01.24",
         "bottle": false
       },
       "zopfli": {
@@ -3237,7 +3243,9 @@
             }
           }
         }
-      }
+      },
+      "koekeishiya/formulae/skhd": null,
+      "koekeishiya/formulae/yabai": null
     },
     "cask": {
       "1password": {
@@ -3271,7 +3279,7 @@
         "version": "79.0.3945.36"
       },
       "corretto": {
-        "version": "11.0.6.10.1"
+        "version": "11.0.6.10.1-1"
       },
       "datagrip": {
         "version": "2019.3.1,193.5662.58"
@@ -3425,6 +3433,18 @@
       },
       "gpg-suite-no-mail": {
         "version": "2019.2"
+      },
+      "font-fontawesome": {
+        "version": "5.12.0"
+      },
+      "github": {
+        "version": "2.2.4-be951a19"
+      },
+      "gpg-suite": {
+        "version": "2019.2"
+      },
+      "ubersicht": {
+        "version": "1.4.61"
       }
     },
     "mas": {
@@ -3463,15 +3483,19 @@
       "Xcode": {
         "id": "497799835",
         "version": "11.3.1"
+      },
+      "Todoist": {
+        "id": "585829637",
+        "version": "7.2.3"
       }
     }
   },
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.2.4",
+        "HOMEBREW_VERSION": "2.2.4-2-g23108f3",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "3e76b220bb36f5d5e812b2dfad82bac2fc5883c3",
+        "Homebrew/homebrew-core": "57b7feb02ebe38652aa834cfe01b6bcc0474285d",
         "CLT": "11.0.33.16",
         "Xcode": "11.3.1",
         "macOS": "10.15.2"
