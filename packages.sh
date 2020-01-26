@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # install xcode command line tools
 sudo xcode-select --install
