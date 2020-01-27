@@ -5,3 +5,4 @@ alias venv-create="virtualenv ./venv && echo source venv/bin/activate | tee -a .
 alias weather="curl wttr.in"
 alias brewup="brew upgrade && brew cask upgrade && brew cleanup"
 alias dotlink="$HOME/system/install"
+alias config="cd $HOME/.config"
