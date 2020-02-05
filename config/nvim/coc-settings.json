@@ -1,5 +1,7 @@
 {
-    "python.jediEnabled": false,
+    "python.jediEnabled": true,
     "python.formatting.provider": "black",
     "python.linting.pylintEnabled": true,
+    "python.formatting.blackPath": "/usr/local/bin/black",
+    "coc.preferences.formatOnSaveFiletypes": ["python"],
 }

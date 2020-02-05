@@ -1,7 +1,9 @@
+tap "getantibody/tap"
 tap "homebrew/aliases"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
@@ -49,6 +51,7 @@ brew "jpeg"
 brew "libtiff"
 brew "ghostscript"
 brew "git"
+brew "git-crypt"
 brew "git-lfs"
 brew "libffi"
 brew "gnu-getopt"
@@ -90,6 +93,7 @@ brew "pandoc"
 brew "jupyterlab"
 brew "knock"
 brew "kotlin"
+brew "lazygit"
 brew "libxml2"
 brew "libxslt"
 brew "libyaml"
@@ -191,6 +195,7 @@ cask "malwarebytes"
 cask "microsoft-office"
 cask "nordvpn"
 cask "notion"
+cask "nvidia-geforce-now"
 cask "pgadmin4"
 cask "postman"
 cask "slack"
@@ -206,6 +211,7 @@ mas "Encrypto", id: 935235287
 mas "Final Cut Pro", id: 424389933
 mas "GarageBand", id: 682658836
 mas "Keynote", id: 409183694
+mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Spark", id: 1176895641

@@ -8,15 +8,16 @@ endif
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
 
-" COC Language Completion Plugins
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dense-analysis/ale'
-
 Plug 'tpope/vim-sensible'
-Plug 'joshdick/onedark.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 
-Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+" Ignore language specific/IDE-esque features when using vscode
+if !exists('g:vscode')
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dense-analysis/ale'
+Plug 'joshdick/onedark.vim'
+endif
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
