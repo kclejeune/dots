@@ -26,7 +26,7 @@
         "sysPrefix": "/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "5fdad1645c3ffb000c56ba18e869d8d84ee26e1e1df27084a44929fbf2717c9a36c664cfdccd49e5dd1942efe8add39927061dc25dc8c729e788b3755fb2beed"
       },
-      "expiry": 1580877685896
+      "expiry": 1581095863361
     },
     "/usr/local/bin/python.v3": {
       "data": {
@@ -51,7 +51,7 @@
         "sysPrefix": "/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "4f19c2a2191aff202dc064860bd0c08e4c73d7ae03a53f3383324ce02601f2e112962e12bffadcac9cd5b250ab689289f0e5d83222d1297c62fccf2f8fe9c7d9"
       },
-      "expiry": 1580877685897
+      "expiry": 1581095863367
     },
     "/usr/local/bin/python3.7.v3": {
       "data": {
@@ -76,7 +76,7 @@
         "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
         "fileHash": "2d51ec30e38b199425e42437436b4e0d0f4cc198b29f8ef57a2f9c8d37ecc0955390c24d01ef5b430c6d2e7ee11b4fc34db23efbe5b6d44ccbf673be3f3c5977"
       },
-      "expiry": 1580877685935
+      "expiry": 1581095863353
     },
     "/usr/local/bin/python3.v3": {
       "data": {
@@ -101,7 +101,7 @@
         "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
         "fileHash": "9c9702ffaf11ae7e2704389b2890a9c7430c8df51849e31b963927ca00376a6e300817bb7879259b91ed34a0885fb4e69249629a584173c18a02e70ac810fd82"
       },
-      "expiry": 1580877685921
+      "expiry": 1581095863386
     },
     "/usr/local/bin/python2.7.v3": {
       "data": {
@@ -126,7 +126,7 @@
         "sysPrefix": "/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "0d2c8a42fc3f8e5a942c7003b241d7486ed959c17eed35250cde6c6127405f5aff46b9a735a2b44b90a4ad5e5df21f8afb9e3e23e77452d0fb271809906d9465"
       },
-      "expiry": 1580877685923
+      "expiry": 1581095863360
     },
     "/usr/local/opt/python/libexec/bin/python.v3": {
       "data": {
@@ -151,7 +151,7 @@
         "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
         "fileHash": "62a4c26f19c66b2ea57e446b35cc536390a886a2de8c66d5b5cff3d68c6d29f67fb0bbb0090129a649fd7b660d7e783f6075daf637a9e620e68ed1eaea878ba9"
       },
-      "expiry": 1580877685888
+      "expiry": 1581095863362
     },
     "/usr/bin/python2.7.v3": {
       "data": {
@@ -176,7 +176,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "8ce1e1a7594138694b8dff39bc25213c601601b9bcc5038e44be5ac533a2e1e0c8cf453d5e2c09aa626fd115e34b96dc1c8a45a05b89fdbb49133cf935f9bf84"
       },
-      "expiry": 1580877686038
+      "expiry": 1581095863427
     },
     "/usr/bin/python2.v3": {
       "data": {
@@ -201,7 +201,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "1388cb11d2a293e55023395d6607cd1ae9e2e0979725f46d64a25b328ef7a29229a60e1dad722a59067d95b433b193138dac1ad4a52d589e212cb6b105bd2fa3"
       },
-      "expiry": 1580877686040
+      "expiry": 1581095863422
     },
     "/usr/bin/python.v3": {
       "data": {
@@ -226,7 +226,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "477cb608a45dbedb20fb1ddfc7b36013d3232bdd211181326d3271970c379820b0f125a6e213c93ea72a9152b40139c8143a060c699188acbf1904af8bb9d7c1"
       },
-      "expiry": 1580877686036
+      "expiry": 1581095863425
     },
     "/Users/kclejeune/Projects/colm/venv/bin/python3.7.v3": {
       "data": {
@@ -375,12 +375,12 @@
         "sysPrefix": "/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "3a43b83bf4e3d3fc1645704afa5356abedeef8f5cdd9886b152031e07b695b870523f3f46761af9408793755219b438a53de5ecdff72d8ac13a9089490bf06f1"
       },
-      "expiry": 1580877686043
+      "expiry": 1581095863545
     },
     "INTERPRETERS_CACHE_v3_CurrentPathService": [
       {
         "architecture": 3,
-        "path": "/usr/local/opt/python/bin/python3.7",
+        "path": "/Users/kclejeune/Projects/cas/venv/bin/python3.7",
         "version": {
           "options": {
             "loose": false,
@@ -397,13 +397,13 @@
           "build": [],
           "version": "3.7.6-final"
         },
-        "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
-        "fileHash": "556c43cd9d599caba6ac43e4a099432fedf4b43a557e0b7a163c8ea08dc7fe6b3099341797ffaa21ce19c1fb50ce22e68f8ff407481bdba6935e3cdc835d7fc2",
+        "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+        "fileHash": "0e0bef6bcaef4bd6233b176115419f91ef59fff08967b59f284fb75060157a21ae01534a1ebf8b44c1df722895aa6b81ead7e756c9e59d1b4ad159bf0d79f568",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/usr/local/opt/python/bin/python3.7",
+        "path": "/Users/kclejeune/Projects/cas/venv/bin/python3",
         "version": {
           "options": {
             "loose": false,
@@ -420,8 +420,8 @@
           "build": [],
           "version": "3.7.6-final"
         },
-        "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
-        "fileHash": "556c43cd9d599caba6ac43e4a099432fedf4b43a557e0b7a163c8ea08dc7fe6b3099341797ffaa21ce19c1fb50ce22e68f8ff407481bdba6935e3cdc835d7fc2",
+        "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+        "fileHash": "8b8789ef33552fa806874f7c51df93003b2d1ce0e807a0ede1633e54ae46788b6afcc3cc89db26705af7fc83c658c3d7d7cafe4aceba174e1c07ba5168ec6e7a",
         "type": "Unknown"
       },
       {
@@ -449,7 +449,7 @@
       },
       {
         "architecture": 3,
-        "path": "/usr/local/opt/python/bin/python3.7",
+        "path": "/Users/kclejeune/Projects/cas/venv/bin/python",
         "version": {
           "options": {
             "loose": false,
@@ -466,13 +466,13 @@
           "build": [],
           "version": "3.7.6-final"
         },
-        "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
-        "fileHash": "556c43cd9d599caba6ac43e4a099432fedf4b43a557e0b7a163c8ea08dc7fe6b3099341797ffaa21ce19c1fb50ce22e68f8ff407481bdba6935e3cdc835d7fc2",
+        "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+        "fileHash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87",
         "type": "Unknown"
       },
       {
         "architecture": 3,
-        "path": "/Users/kclejeune/projects/computer-vision/venv/bin/python3",
+        "path": "/Users/kclejeune/Projects/cas/venv/bin/python",
         "version": {
           "options": {
             "loose": false,
@@ -489,14 +489,14 @@
           "build": [],
           "version": "3.7.6-final"
         },
-        "sysPrefix": "/Users/kclejeune/projects/computer-vision/venv/bin/..",
-        "fileHash": "11200224b56a5225370b5921f89fe2018612314bed6b584c9ce5890dee5de77d59d735a89d7ab00c1d4df77ae1dd7ee2bc33368d40f2aa57d89fc1750c6dd5b4",
+        "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+        "fileHash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87",
         "type": "Unknown"
       }
     ],
     "InterpreterAutoSeletionRule-currentPath": {
       "architecture": 3,
-      "path": "/Users/kclejeune/projects/computer-vision/venv/bin/python3",
+      "path": "/Users/kclejeune/Projects/cas/venv/bin/python",
       "version": {
         "options": {
           "loose": false,
@@ -513,8 +513,8 @@
         "build": [],
         "version": "3.7.6-final"
       },
-      "sysPrefix": "/Users/kclejeune/projects/computer-vision/venv/bin/..",
-      "fileHash": "11200224b56a5225370b5921f89fe2018612314bed6b584c9ce5890dee5de77d59d735a89d7ab00c1d4df77ae1dd7ee2bc33368d40f2aa57d89fc1750c6dd5b4",
+      "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+      "fileHash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87",
       "type": "Unknown"
     },
     "preferredGlobalPyInterpreter": {
@@ -568,11 +568,80 @@
           "version": "3.7.3-final"
         },
         "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.7",
-        "fileHash": "72f1949573ddf26717ffa6cb4dc5eaf341d5a08ddd7424e25dab31ced93d81e7114226bb964bf15e51e48cad896596fe0b6a93543bac44ed479d69d80bb57733"
+        "fileHash": "2ab7fbb532f3d82ef242091969d912b8c6a167c769d96ca74c605e971baa21bf3ef43c6487b87fbefb3e7be1bd6b3b1ae4c130fd6e3071a4f386da23eb8640d7"
       },
-      "expiry": 1580877686051
+      "expiry": 1581095863542
     },
     "INTERPRETERS_CACHE_v3_KnownPathsService": [
+      {
+        "architecture": 3,
+        "path": "/Users/kclejeune/Projects/cas/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+        "fileHash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/kclejeune/Projects/cas/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+        "fileHash": "8b8789ef33552fa806874f7c51df93003b2d1ce0e807a0ede1633e54ae46788b6afcc3cc89db26705af7fc83c658c3d7d7cafe4aceba174e1c07ba5168ec6e7a",
+        "type": "Unknown"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/kclejeune/Projects/cas/venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+        "fileHash": "0e0bef6bcaef4bd6233b176115419f91ef59fff08967b59f284fb75060157a21ae01534a1ebf8b44c1df722895aa6b81ead7e756c9e59d1b4ad159bf0d79f568",
+        "type": "Unknown"
+      },
       {
         "architecture": 3,
         "path": "/usr/local/opt/python/libexec/bin/python",
@@ -800,7 +869,7 @@
           "version": "3.7.3-final"
         },
         "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.7",
-        "fileHash": "72f1949573ddf26717ffa6cb4dc5eaf341d5a08ddd7424e25dab31ced93d81e7114226bb964bf15e51e48cad896596fe0b6a93543bac44ed479d69d80bb57733",
+        "fileHash": "2ab7fbb532f3d82ef242091969d912b8c6a167c769d96ca74c605e971baa21bf3ef43c6487b87fbefb3e7be1bd6b3b1ae4c130fd6e3071a4f386da23eb8640d7",
         "type": "Unknown"
       },
       {
@@ -1007,7 +1076,7 @@
           "version": "3.7.3-final"
         },
         "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.7",
-        "fileHash": "72f1949573ddf26717ffa6cb4dc5eaf341d5a08ddd7424e25dab31ced93d81e7114226bb964bf15e51e48cad896596fe0b6a93543bac44ed479d69d80bb57733",
+        "fileHash": "2ab7fbb532f3d82ef242091969d912b8c6a167c769d96ca74c605e971baa21bf3ef43c6487b87fbefb3e7be1bd6b3b1ae4c130fd6e3071a4f386da23eb8640d7",
         "type": "Unknown"
       }
     ],
@@ -1024,35 +1093,35 @@
         "displayName": "Python 3.7.6 64-bit",
         "hash": "62a4c26f19c66b2ea57e446b35cc536390a886a2de8c66d5b5cff3d68c6d29f67fb0bbb0090129a649fd7b660d7e783f6075daf637a9e620e68ed1eaea878ba9-0257936250201054dcdb257ebc2561e2"
       },
-      "expiry": 1580835679053
+      "expiry": 1581095863684
     },
     "/usr/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.16 64-bit",
         "hash": "477cb608a45dbedb20fb1ddfc7b36013d3232bdd211181326d3271970c379820b0f125a6e213c93ea72a9152b40139c8143a060c699188acbf1904af8bb9d7c1-ed9726210b7a4dba2a42c4c5d160c35b"
       },
-      "expiry": 1580835679057
+      "expiry": 1581095863676
     },
     "/usr/local/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.17 64-bit",
         "hash": "4f19c2a2191aff202dc064860bd0c08e4c73d7ae03a53f3383324ce02601f2e112962e12bffadcac9cd5b250ab689289f0e5d83222d1297c62fccf2f8fe9c7d9-b1bada659e4cffeac41ba2bee4ae157a"
       },
-      "expiry": 1580835679055
+      "expiry": 1581095863680
     },
     "/usr/local/bin/python3.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.6 64-bit",
         "hash": "9c9702ffaf11ae7e2704389b2890a9c7430c8df51849e31b963927ca00376a6e300817bb7879259b91ed34a0885fb4e69249629a584173c18a02e70ac810fd82-037a52ae934a16cda1e11ab720f5db38"
       },
-      "expiry": 1580835679063
+      "expiry": 1581095863682
     },
     "/usr/bin/python3.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.3 64-bit",
-        "hash": "72f1949573ddf26717ffa6cb4dc5eaf341d5a08ddd7424e25dab31ced93d81e7114226bb964bf15e51e48cad896596fe0b6a93543bac44ed479d69d80bb57733-0da08f9eb11c4b57e774625b778bc4af"
+        "hash": "2ab7fbb532f3d82ef242091969d912b8c6a167c769d96ca74c605e971baa21bf3ef43c6487b87fbefb3e7be1bd6b3b1ae4c130fd6e3071a4f386da23eb8640d7-d596c8383beabd816c00efb3b4c55de9"
       },
-      "expiry": 1580835679059
+      "expiry": 1581095863678
     },
     "/usr/local/opt/python/bin/python3.7.interpreter.displayName.v7": {
       "data": {
@@ -1066,11 +1135,11 @@
         "displayName": "Python 2.7.17 64-bit",
         "hash": "3a43b83bf4e3d3fc1645704afa5356abedeef8f5cdd9886b152031e07b695b870523f3f46761af9408793755219b438a53de5ecdff72d8ac13a9089490bf06f1-f76027100f81016c63e2b959ffd96a7c"
       },
-      "expiry": 1580877686924
+      "expiry": 1581095863686
     },
     "InterpreterAutoSeletionRule-system": {
       "architecture": 3,
-      "path": "/usr/local/opt/python/bin/python3.7",
+      "path": "/usr/local/bin/python3",
       "version": {
         "options": {
           "loose": false,
@@ -1088,7 +1157,7 @@
         "version": "3.7.6-final"
       },
       "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
-      "fileHash": "556c43cd9d599caba6ac43e4a099432fedf4b43a557e0b7a163c8ea08dc7fe6b3099341797ffaa21ce19c1fb50ce22e68f8ff407481bdba6935e3cdc835d7fc2",
+      "fileHash": "9c9702ffaf11ae7e2704389b2890a9c7430c8df51849e31b963927ca00376a6e300817bb7879259b91ed34a0885fb4e69249629a584173c18a02e70ac810fd82",
       "type": "Unknown",
       "displayName": "Python 3.7.6 64-bit"
     },
@@ -1150,7 +1219,7 @@
           "displayName": "Python 3.7.6 64-bit"
         }
       },
-      "expiry": 1580835679079
+      "expiry": 1581095863773
     },
     "/usr/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1180,7 +1249,7 @@
           "displayName": "Python 2.7.16 64-bit"
         }
       },
-      "expiry": 1580835679086
+      "expiry": 1581095863755
     },
     "/usr/local/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1210,7 +1279,7 @@
           "displayName": "Python 2.7.17 64-bit"
         }
       },
-      "expiry": 1580835679082
+      "expiry": 1581095863764
     },
     "/usr/local/bin/python3.interpreter.Details.v7": {
       "data": {
@@ -1240,11 +1309,11 @@
           "displayName": "Python 3.7.6 64-bit"
         }
       },
-      "expiry": 1580835679096
+      "expiry": 1581095863769
     },
     "/usr/bin/python3.interpreter.Details.v7": {
       "data": {
-        "fileHash": "72f1949573ddf26717ffa6cb4dc5eaf341d5a08ddd7424e25dab31ced93d81e7114226bb964bf15e51e48cad896596fe0b6a93543bac44ed479d69d80bb57733",
+        "fileHash": "2ab7fbb532f3d82ef242091969d912b8c6a167c769d96ca74c605e971baa21bf3ef43c6487b87fbefb3e7be1bd6b3b1ae4c130fd6e3071a4f386da23eb8640d7",
         "info": {
           "architecture": 3,
           "path": "/usr/bin/python3",
@@ -1265,12 +1334,12 @@
             "version": "3.7.3-final"
           },
           "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.7",
-          "fileHash": "72f1949573ddf26717ffa6cb4dc5eaf341d5a08ddd7424e25dab31ced93d81e7114226bb964bf15e51e48cad896596fe0b6a93543bac44ed479d69d80bb57733",
+          "fileHash": "2ab7fbb532f3d82ef242091969d912b8c6a167c769d96ca74c605e971baa21bf3ef43c6487b87fbefb3e7be1bd6b3b1ae4c130fd6e3071a4f386da23eb8640d7",
           "type": "Unknown",
           "displayName": "Python 3.7.3 64-bit"
         }
       },
-      "expiry": 1580835679090
+      "expiry": 1581095863760
     },
     "/usr/local/opt/python/bin/python3.7.interpreter.Details.v7": {
       "data": {
@@ -1330,7 +1399,7 @@
           "displayName": "Python 2.7.17 64-bit"
         }
       },
-      "expiry": 1580877686945
+      "expiry": 1581095863777
     },
     "/Users/kclejeune/Projects/colm/venv/bin/python3.7.interpreter.displayName.v7": {
       "data": {
@@ -1341,7 +1410,7 @@
     },
     "InterpreterAutoSeletionRule-cachedInterpreters": {
       "architecture": 3,
-      "path": "/usr/local/opt/python/bin/python3.7",
+      "path": "/usr/local/bin/python3",
       "version": {
         "options": {
           "loose": false,
@@ -1359,8 +1428,9 @@
         "version": "3.7.6-final"
       },
       "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
-      "fileHash": "556c43cd9d599caba6ac43e4a099432fedf4b43a557e0b7a163c8ea08dc7fe6b3099341797ffaa21ce19c1fb50ce22e68f8ff407481bdba6935e3cdc835d7fc2",
+      "fileHash": "9c9702ffaf11ae7e2704389b2890a9c7430c8df51849e31b963927ca00376a6e300817bb7879259b91ed34a0885fb4e69249629a584173c18a02e70ac810fd82",
       "type": "Unknown",
+      "cachedEntry": true,
       "displayName": "Python 3.7.6 64-bit"
     },
     "/Users/kclejeune/Projects/crypto/venv/bin/python3.7.v3": {
@@ -1386,7 +1456,7 @@
         "sysPrefix": "/Users/kclejeune/Projects/crypto/venv/bin/..",
         "fileHash": "1cade939278badc59f9dd905db71ea478619e944639a55ae0f565e40a1cd0909b4eb458ac5ffb20585ac22f69488ce3a881e1deb0087f958949a5365bc2e7ac9"
       },
-      "expiry": 1580576041909
+      "expiry": 1581005390352
     },
     "/Users/kclejeune/Projects/crypto/venv/bin/python3.v3": {
       "data": {
@@ -1411,7 +1481,7 @@
         "sysPrefix": "/Users/kclejeune/Projects/crypto/venv/bin/..",
         "fileHash": "d0e96c210e30edd8a664344fd371a4ec04c1f190f3c64094aab2413a74501cc76e42c172ff7427b1ed3e16024b927ca5026d7e9eb4a39bc0860d528f476c9042"
       },
-      "expiry": 1580576041913
+      "expiry": 1581005390468
     },
     "/Users/kclejeune/Projects/crypto/venv/bin/python.v3": {
       "data": {
@@ -1436,11 +1506,11 @@
         "sysPrefix": "/Users/kclejeune/Projects/crypto/venv/bin/..",
         "fileHash": "6f91281b628b75ec45db6ec7b170d697cfb91fa5f0f3a133b2eba247004c786e4c51caea5e94cece3bde33eab0f863d0a9799988484dfbbded57a5b2e9d97c19"
       },
-      "expiry": 1580576041914
+      "expiry": 1581005390430
     },
     "InterpreterAutoSeletionRule-environment": {
       "architecture": 3,
-      "path": "/Users/kclejeune/projects/computer-vision/venv/bin/python3",
+      "path": "/Users/kclejeune/Projects/cas/venv/bin/python3",
       "version": {
         "options": {
           "loose": false,
@@ -1457,15 +1527,15 @@
         "build": [],
         "version": "3.7.6-final"
       },
-      "sysPrefix": "/Users/kclejeune/projects/computer-vision/venv/bin/..",
-      "fileHash": "11200224b56a5225370b5921f89fe2018612314bed6b584c9ce5890dee5de77d59d735a89d7ab00c1d4df77ae1dd7ee2bc33368d40f2aa57d89fc1750c6dd5b4",
+      "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+      "fileHash": "8b8789ef33552fa806874f7c51df93003b2d1ce0e807a0ede1633e54ae46788b6afcc3cc89db26705af7fc83c658c3d7d7cafe4aceba174e1c07ba5168ec6e7a",
       "type": "VirtualEnv"
     },
     "/Users/kclejeune/Projects/crypto/venv/bin/python3.interpreter.Details.v7": {
       "data": {
         "fileHash": "d0e96c210e30edd8a664344fd371a4ec04c1f190f3c64094aab2413a74501cc76e42c172ff7427b1ed3e16024b927ca5026d7e9eb4a39bc0860d528f476c9042"
       },
-      "expiry": 1580576041970
+      "expiry": 1581005390445
     },
     "/Users/kclejeune/projects/crypto/venv/bin/python3.7.v3": {
       "data": {
@@ -1490,7 +1560,7 @@
         "sysPrefix": "/Users/kclejeune/projects/crypto/venv/bin/..",
         "fileHash": "1cade939278badc59f9dd905db71ea478619e944639a55ae0f565e40a1cd0909b4eb458ac5ffb20585ac22f69488ce3a881e1deb0087f958949a5365bc2e7ac9"
       },
-      "expiry": 1580576041973
+      "expiry": 1581005390392
     },
     "/Users/kclejeune/projects/crypto/venv/bin/python3.v3": {
       "data": {
@@ -1515,7 +1585,7 @@
         "sysPrefix": "/Users/kclejeune/projects/crypto/venv/bin/..",
         "fileHash": "d0e96c210e30edd8a664344fd371a4ec04c1f190f3c64094aab2413a74501cc76e42c172ff7427b1ed3e16024b927ca5026d7e9eb4a39bc0860d528f476c9042"
       },
-      "expiry": 1580576041974
+      "expiry": 1581005390402
     },
     "/Users/kclejeune/projects/crypto/venv/bin/python.v3": {
       "data": {
@@ -1540,21 +1610,21 @@
         "sysPrefix": "/Users/kclejeune/projects/crypto/venv/bin/..",
         "fileHash": "6f91281b628b75ec45db6ec7b170d697cfb91fa5f0f3a133b2eba247004c786e4c51caea5e94cece3bde33eab0f863d0a9799988484dfbbded57a5b2e9d97c19"
       },
-      "expiry": 1580576041975
+      "expiry": 1581005390403
     },
     "/Users/kclejeune/projects/crypto/venv/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.6 64-bit ('venv': virtualenv)",
         "hash": "6f91281b628b75ec45db6ec7b170d697cfb91fa5f0f3a133b2eba247004c786e4c51caea5e94cece3bde33eab0f863d0a9799988484dfbbded57a5b2e9d97c19-30c4596115364dc58f499c37c1b51a04"
       },
-      "expiry": 1580576042024
+      "expiry": 1581005390433
     },
     "/Users/kclejeune/Projects/crypto/venv/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.6 64-bit",
         "hash": "6f91281b628b75ec45db6ec7b170d697cfb91fa5f0f3a133b2eba247004c786e4c51caea5e94cece3bde33eab0f863d0a9799988484dfbbded57a5b2e9d97c19-358cf1ed89f9b5c8fbd58d01a2f03ea2"
       },
-      "expiry": 1580576042036
+      "expiry": 1581005391519
     },
     "/Users/kclejeune/projects/crypto/venv/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1585,7 +1655,7 @@
           "displayName": "Python 3.7.6 64-bit ('venv': virtualenv)"
         }
       },
-      "expiry": 1580576042053
+      "expiry": 1581005390474
     },
     "/Users/kclejeune/Projects/crypto/venv/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1615,14 +1685,14 @@
           "displayName": "Python 3.7.6 64-bit"
         }
       },
-      "expiry": 1580576042058
+      "expiry": 1581005391533
     },
     "/Users/kclejeune/Projects/crypto/venv/bin/python3.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.6 64-bit ('venv': virtualenv)",
         "hash": "d0e96c210e30edd8a664344fd371a4ec04c1f190f3c64094aab2413a74501cc76e42c172ff7427b1ed3e16024b927ca5026d7e9eb4a39bc0860d528f476c9042-75aa932172993de78b39ab8c01f69f6b"
       },
-      "expiry": 1580576042091
+      "expiry": 1581005390537
     },
     "/Users/kclejeune/projects/colm/venv/bin/python.v3": {
       "data": {
@@ -1875,6 +1945,281 @@
         "hash": "11200224b56a5225370b5921f89fe2018612314bed6b584c9ce5890dee5de77d59d735a89d7ab00c1d4df77ae1dd7ee2bc33368d40f2aa57d89fc1750c6dd5b4-1dfc2711569765040001291fb48d209b"
       },
       "expiry": 1580878653975
+    },
+    "/Users/kclejeune/Projects/crypto/venv/bin/python3.7.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.6 64-bit",
+        "hash": "1cade939278badc59f9dd905db71ea478619e944639a55ae0f565e40a1cd0909b4eb458ac5ffb20585ac22f69488ce3a881e1deb0087f958949a5365bc2e7ac9-4193161ee52c95894ddd752167101464"
+      },
+      "expiry": 1581005390563
+    },
+    "/Users/kclejeune/Projects/crypto/venv/bin/python3.7.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "1cade939278badc59f9dd905db71ea478619e944639a55ae0f565e40a1cd0909b4eb458ac5ffb20585ac22f69488ce3a881e1deb0087f958949a5365bc2e7ac9",
+        "info": {
+          "architecture": 3,
+          "path": "/Users/kclejeune/Projects/crypto/venv/bin/python3.7",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.7.6-final",
+            "major": 3,
+            "minor": 7,
+            "patch": 6,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.7.6-final"
+          },
+          "sysPrefix": "/Users/kclejeune/Projects/crypto/venv/bin/..",
+          "fileHash": "1cade939278badc59f9dd905db71ea478619e944639a55ae0f565e40a1cd0909b4eb458ac5ffb20585ac22f69488ce3a881e1deb0087f958949a5365bc2e7ac9",
+          "type": "Unknown",
+          "displayName": "Python 3.7.6 64-bit"
+        }
+      },
+      "expiry": 1581005390580
+    },
+    "/Users/kclejeune/Projects/cas/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kclejeune/Projects/cas/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+        "fileHash": "8b8789ef33552fa806874f7c51df93003b2d1ce0e807a0ede1633e54ae46788b6afcc3cc89db26705af7fc83c658c3d7d7cafe4aceba174e1c07ba5168ec6e7a"
+      },
+      "expiry": 1581095863418
+    },
+    "/Users/kclejeune/Projects/cas/venv/bin/python3.7.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kclejeune/Projects/cas/venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+        "fileHash": "0e0bef6bcaef4bd6233b176115419f91ef59fff08967b59f284fb75060157a21ae01534a1ebf8b44c1df722895aa6b81ead7e756c9e59d1b4ad159bf0d79f568"
+      },
+      "expiry": 1581095863365
+    },
+    "/Users/kclejeune/Projects/cas/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kclejeune/Projects/cas/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+        "fileHash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87"
+      },
+      "expiry": 1581095863428
+    },
+    "/Users/kclejeune/projects/cas/venv/bin/python3.7.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kclejeune/projects/cas/venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/projects/cas/venv/bin/..",
+        "fileHash": "0e0bef6bcaef4bd6233b176115419f91ef59fff08967b59f284fb75060157a21ae01534a1ebf8b44c1df722895aa6b81ead7e756c9e59d1b4ad159bf0d79f568"
+      },
+      "expiry": 1581095863392
+    },
+    "/Users/kclejeune/projects/cas/venv/bin/python3.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kclejeune/projects/cas/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/projects/cas/venv/bin/..",
+        "fileHash": "8b8789ef33552fa806874f7c51df93003b2d1ce0e807a0ede1633e54ae46788b6afcc3cc89db26705af7fc83c658c3d7d7cafe4aceba174e1c07ba5168ec6e7a"
+      },
+      "expiry": 1581095863393
+    },
+    "/Users/kclejeune/projects/cas/venv/bin/python.v3": {
+      "data": {
+        "architecture": 3,
+        "path": "/Users/kclejeune/projects/cas/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/projects/cas/venv/bin/..",
+        "fileHash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87"
+      },
+      "expiry": 1581095863395
+    },
+    "/Users/kclejeune/projects/cas/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.6 64-bit ('venv': virtualenv)",
+        "hash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87-d2afbc7cccf687f24ba5fdf6c432779a"
+      },
+      "expiry": 1581095863480
+    },
+    "/Users/kclejeune/projects/cas/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87",
+        "info": {
+          "architecture": 3,
+          "path": "/Users/kclejeune/projects/cas/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.7.6-final",
+            "major": 3,
+            "minor": 7,
+            "patch": 6,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.7.6-final"
+          },
+          "sysPrefix": "/Users/kclejeune/projects/cas/venv/bin/..",
+          "fileHash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87",
+          "envName": "venv",
+          "type": "VirtualEnv",
+          "displayName": "Python 3.7.6 64-bit ('venv': virtualenv)"
+        }
+      },
+      "expiry": 1581095863507
+    },
+    "/Users/kclejeune/Projects/cas/venv/bin/python3.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "8b8789ef33552fa806874f7c51df93003b2d1ce0e807a0ede1633e54ae46788b6afcc3cc89db26705af7fc83c658c3d7d7cafe4aceba174e1c07ba5168ec6e7a"
+      },
+      "expiry": 1581095863519
+    },
+    "/Users/kclejeune/Projects/cas/venv/bin/python3.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.6 64-bit ('venv': virtualenv)",
+        "hash": "8b8789ef33552fa806874f7c51df93003b2d1ce0e807a0ede1633e54ae46788b6afcc3cc89db26705af7fc83c658c3d7d7cafe4aceba174e1c07ba5168ec6e7a-e11bb451e20119047424d74db1f8e46d"
+      },
+      "expiry": 1581095863628
+    },
+    "/Users/kclejeune/Projects/cas/venv/bin/python.interpreter.displayName.v7": {
+      "data": {
+        "displayName": "Python 3.7.6 64-bit",
+        "hash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87-02dd57ec5b6b21c2c5e2f06d3403ac8c"
+      },
+      "expiry": 1581095863674
+    },
+    "/Users/kclejeune/Projects/cas/venv/bin/python.interpreter.Details.v7": {
+      "data": {
+        "fileHash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87",
+        "info": {
+          "architecture": 3,
+          "path": "/Users/kclejeune/Projects/cas/venv/bin/python",
+          "version": {
+            "options": {
+              "loose": false,
+              "includePrerelease": false
+            },
+            "loose": false,
+            "raw": "3.7.6-final",
+            "major": 3,
+            "minor": 7,
+            "patch": 6,
+            "prerelease": [
+              "final"
+            ],
+            "build": [],
+            "version": "3.7.6-final"
+          },
+          "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+          "fileHash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87",
+          "type": "Unknown",
+          "displayName": "Python 3.7.6 64-bit"
+        }
+      },
+      "expiry": 1581095863750
     }
   },
   "coc-python|/Users/kclejeune/Projects/colm": {
@@ -2729,6 +3074,182 @@
         },
         "sysPrefix": "/Users/kclejeune/projects/computer-vision/venv/bin/..",
         "fileHash": "b6276c2138f2b212fa98a53a1820c0f2db6c2ccbf2e699ad0746fbc8c8e0d073eb8a36587c7e59c011c8fc2b7fa3b2cda645a5179d26f84050ee7b234e465a64",
+        "envName": "venv",
+        "type": "VirtualEnv"
+      }
+    ]
+  },
+  "coc-python|/Users/kclejeune/projects/cas": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:8b6fcd308228ec392342e54c6d26c606": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:8b6fcd308228ec392342e54c6d26c606": [
+      {
+        "architecture": 3,
+        "path": "/Users/kclejeune/projects/cas/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/projects/cas/venv/bin/..",
+        "fileHash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87",
+        "envName": "venv",
+        "type": "VirtualEnv"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/kclejeune/projects/cas/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/projects/cas/venv/bin/..",
+        "fileHash": "8b8789ef33552fa806874f7c51df93003b2d1ce0e807a0ede1633e54ae46788b6afcc3cc89db26705af7fc83c658c3d7d7cafe4aceba174e1c07ba5168ec6e7a",
+        "envName": "venv",
+        "type": "VirtualEnv"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/kclejeune/projects/cas/venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/projects/cas/venv/bin/..",
+        "fileHash": "0e0bef6bcaef4bd6233b176115419f91ef59fff08967b59f284fb75060157a21ae01534a1ebf8b44c1df722895aa6b81ead7e756c9e59d1b4ad159bf0d79f568",
+        "envName": "venv",
+        "type": "VirtualEnv"
+      }
+    ],
+    "SelectedPythonPath": "/Users/kclejeune/Projects/cas/venv/bin/python3",
+    "autoSelectedWorkspacePythonInterpreter-/Users/kclejeune/projects/cas": {
+      "architecture": 3,
+      "path": "/Users/kclejeune/Projects/cas/venv/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.6-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 6,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.6-final"
+      },
+      "sysPrefix": "/Users/kclejeune/Projects/cas/venv/bin/..",
+      "fileHash": "8b8789ef33552fa806874f7c51df93003b2d1ce0e807a0ede1633e54ae46788b6afcc3cc89db26705af7fc83c658c3d7d7cafe4aceba174e1c07ba5168ec6e7a",
+      "type": "VirtualEnv"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": [
+      {
+        "architecture": 3,
+        "path": "/Users/kclejeune/projects/cas/venv/bin/python",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/projects/cas/venv/bin/..",
+        "fileHash": "4d1ffd76100c277bcaa4f7dea754d9989bb7f6b65ba555725de0986b75e8b6811dc3b0192003a52327ceef38d5445a022906dec40d371bf790317917ab48fb87",
+        "envName": "venv",
+        "type": "VirtualEnv"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/kclejeune/projects/cas/venv/bin/python3",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/projects/cas/venv/bin/..",
+        "fileHash": "8b8789ef33552fa806874f7c51df93003b2d1ce0e807a0ede1633e54ae46788b6afcc3cc89db26705af7fc83c658c3d7d7cafe4aceba174e1c07ba5168ec6e7a",
+        "envName": "venv",
+        "type": "VirtualEnv"
+      },
+      {
+        "architecture": 3,
+        "path": "/Users/kclejeune/projects/cas/venv/bin/python3.7",
+        "version": {
+          "options": {
+            "loose": false,
+            "includePrerelease": false
+          },
+          "loose": false,
+          "raw": "3.7.6-final",
+          "major": 3,
+          "minor": 7,
+          "patch": 6,
+          "prerelease": [
+            "final"
+          ],
+          "build": [],
+          "version": "3.7.6-final"
+        },
+        "sysPrefix": "/Users/kclejeune/projects/cas/venv/bin/..",
+        "fileHash": "0e0bef6bcaef4bd6233b176115419f91ef59fff08967b59f284fb75060157a21ae01534a1ebf8b44c1df722895aa6b81ead7e756c9e59d1b4ad159bf0d79f568",
         "envName": "venv",
         "type": "VirtualEnv"
       }

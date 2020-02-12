@@ -17,6 +17,7 @@ if !exists('g:vscode')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
 Plug 'joshdick/onedark.vim'
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 endif
 
 " List ends here. Plugins become visible to Vim after this call.
