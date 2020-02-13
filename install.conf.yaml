@@ -14,7 +14,7 @@
       glob: true
       path: config/*
     ~/.zshrc: ~/.config/zsh/zshrc.zsh
-    ~/.ssh: secrets/.ssh/
+    ~/.ssh: secrets/ssh
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
