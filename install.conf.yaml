@@ -4,17 +4,16 @@
       relink: true
       force: true
 - clean: ['~', '~/.config']
-
 - link:
-    ~/.config/:
-      glob: true
-      path: config-mac/*
-      if: '[ `uname` = Darwin ]'
     ~/.config/:
       glob: true
       path: config/*
     ~/.zshrc: ~/.config/zsh/zshrc.zsh
     ~/.ssh: secrets/ssh
-
+- link:
+    ~/.config/:
+      if: '[ `uname` = Darwin ]'
+      glob: true
+      path: config-mac/*
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
