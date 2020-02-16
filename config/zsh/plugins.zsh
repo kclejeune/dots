@@ -27,7 +27,6 @@ if [[ $(uname -s) == 'Darwin' ]]; then
 fi
 
 zplug "themes/agnoster", from:oh-my-zsh, defer:3
-eval "$(direnv hook zsh)"
 
 # Install packages that have not been installed yet
 if ! zplug check --verbose; then
@@ -40,3 +39,8 @@ if ! zplug check --verbose; then
 fi
 
 zplug load
+
+# load plugin completions
+eval "$(direnv hook zsh)"
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

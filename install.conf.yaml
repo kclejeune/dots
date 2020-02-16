@@ -15,5 +15,10 @@
       if: '[ `uname` = Darwin ]'
       glob: true
       path: config-mac/*
+- link:
+    ~/.config/:
+      if: '[ `uname` = Linux ]'
+      glob: true
+      path: config-linux/*
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
