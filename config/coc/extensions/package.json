@@ -8,7 +8,7 @@
     "coc-marketplace": ">=1.7.0",
     "coc-pairs": ">=1.2.20",
     "coc-prettier": ">=1.1.11",
-    "coc-python": ">=1.2.8",
+    "coc-python": ">=1.2.7",
     "coc-snippets": ">=2.1.18",
     "coc-tsserver": ">=1.4.9",
     "coc-vimtex": ">=1.0.2"

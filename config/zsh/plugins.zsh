@@ -8,36 +8,34 @@ fi
 source ~/.zplug/init.zsh
 
 # Make sure to use double quotes to prevent shell expansion
+zplug "zplug/zplug"
+zplug "changyuheng/fz", defer:1
+zplug "rupa/z", use:z.sh
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/pip", from:oh-my-zsh
 zplug "plugins/command-not-foudn", from:oh-my-zsh
 zplug "plugins/sudo", from:oh-my-zsh
 zplug "plugins/common-aliases", from:oh-my-zsh
 zplug "zsh-users/zsh-completions"
-zplug "changyuheng/fz", defer:1
-zplug "rupa/z", use:z.sh
-
-zplug "themes/agnoster", from:oh-my-zsh, defer:3
+# Load the theme.
 zplug "zsh-users/zsh-autosuggestions", defer:3
-zplug "zsh-users/zsh-history-substring-search", defer:3
 zplug "zsh-users/zsh-syntax-highlighting", defer:3
 
 if [[ $(uname -s) == 'Darwin' ]]; then
     zplug "plugins/brew", from:oh-my-zsh
     zplug "plugins/osx", from:oh-my-zsh
-    # Homebrew Completions
-    if type brew &>/dev/null; then
-        fpath=$(brew --prefix)/share/zsh/site-functions:$fpath
-    fi
+
+    # Add NVM support for Homebrew
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 elif [[ $(uname -s) == 'Linux' ]]; then
-    # do linux specific config
-    if [[ ! -d ~/.fnm ]]; then
-        # install fnm for node version management if it's not already
-        curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash
-    fi
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
 
-zplug load
+zplug "themes/agnoster", from:oh-my-zsh, defer:3
 
 # Install packages that have not been installed yet
 if ! zplug check --verbose; then
@@ -49,9 +47,8 @@ if ! zplug check --verbose; then
     fi
 fi
 
+zplug load
 
 # load plugin completions
 eval "$(direnv hook zsh)"
-# fnm
-export PATH=/home/kclejeune/.fnm:$PATH
-eval "`fnm env --multi`"
+

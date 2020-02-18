@@ -10,4 +10,3 @@ fi
 export GPG_TTY=/dev/ttys000
 export VISUAL=nvim
 export EDITOR=nvim
-export TERM=xterm-256color
