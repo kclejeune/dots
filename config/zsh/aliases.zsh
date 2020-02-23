@@ -3,7 +3,6 @@ alias vim="nvim"
 alias v="nvim"
 alias weather="curl wttr.in"
 alias dotlink="$HOME/system/install"
-alias config="cd $HOME/.config"
 eval "$(hub alias -s)"
 
 # macOS Specific Aliases

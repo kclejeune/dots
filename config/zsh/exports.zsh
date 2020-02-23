@@ -10,3 +10,5 @@ fi
 export GPG_TTY=/dev/ttys000
 export VISUAL=nvim
 export EDITOR=nvim
+export DEFAULT_USER="$(whoami)"
+export BAT_CONFIG_PATH="$HOME/.config/bat/bat.conf"

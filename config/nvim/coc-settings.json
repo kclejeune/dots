@@ -3,5 +3,6 @@
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "/usr/local/bin/black",
     "python.linting.pylintEnabled": true,
-    "coc.preferences.formatOnSaveFiletypes": ["python"],
+    "suggest.autoTrigger": "trigger",
+    "coc.preferences.formatOnSaveFiletypes": ["python", "json", "java", "javascript"],
 }

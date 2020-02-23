@@ -12,6 +12,12 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+if isdirectory('/usr/local/opt/fzf')
+  Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+else
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+  Plug 'junegunn/fzf.vim'
+endif
 
 " Ignore language specific/IDE-esque features when using vscode
 if !exists('g:vscode')

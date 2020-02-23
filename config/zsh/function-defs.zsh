@@ -1,6 +1,4 @@
-function gi() { curl -sLw "\n" https://www.gitignore.io/api/\$@ ;}
-
-function mkvenv () {
+function mkvenv() {
     if [ -z "$1" ]; then
         DIR="venv"
     else
@@ -9,6 +7,11 @@ function mkvenv () {
 
     virtualenv ./$DIR
     echo "source $DIR/bin/activate\nunset PS1" | tee -a .envrc && direnv allow
-    echo .envrc >> .gitignore
-    echo venv/ >> .gitignore
+    echo .envrc >>.gitignore
+    echo venv/ >>.gitignore
+}
+
+function config() {
+    # navigate to the config file for a specific app
+    cd "$HOME/.config/$1"
 }
