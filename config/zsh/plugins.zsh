@@ -25,6 +25,9 @@ if [[ $(uname -s) == 'Darwin' ]]; then
     zplug "plugins/brew", from:oh-my-zsh
     zplug "plugins/osx", from:oh-my-zsh
 elif [[ $(uname -s) == 'Linux' ]]; then
+    if [[ ! -d $HOME/.fnm ]]; then
+        curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash
+    fi
 fi
 
 zplug "themes/agnoster", from:oh-my-zsh, defer:3
