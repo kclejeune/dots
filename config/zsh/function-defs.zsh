@@ -1,5 +1,5 @@
 function mkvenv() {
-    if [ -z "$1" ]; then
+    if [[ -z "$1" ]]; then
         DIR="venv"
     else
         DIR=$1
