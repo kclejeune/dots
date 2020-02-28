@@ -9,7 +9,6 @@
       glob: true
       path: config/*
     ~/.zshrc: ~/.config/zsh/zshrc.zsh
-    ~/.ssh: secrets/ssh
 - link:
     ~/.config/:
       if: '[ `uname` = Darwin ]'
