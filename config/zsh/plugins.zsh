@@ -20,7 +20,6 @@ zplug "zsh-users/zsh-completions"
 # Load the theme.
 zplug "zsh-users/zsh-autosuggestions", defer:3
 zplug "zsh-users/zsh-syntax-highlighting", defer:3
-eval "$(fnm env --multi)"
 if [[ $(uname -s) == 'Darwin' ]]; then
     zplug "plugins/brew", from:oh-my-zsh
     zplug "plugins/osx", from:oh-my-zsh
@@ -28,6 +27,7 @@ elif [[ $(uname -s) == 'Linux' ]]; then
     if [[ ! -d $HOME/.fnm ]]; then
         curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash
     fi
+    export PATH=$HOME/.fnm:$PATH
 fi
 
 zplug "themes/agnoster", from:oh-my-zsh, defer:3
@@ -44,6 +44,8 @@ fi
 
 zplug load
 
+# load fnm completions
+eval "$(fnm env --multi)"
 # load plugin completions
 eval "$(direnv hook zsh)"
 
