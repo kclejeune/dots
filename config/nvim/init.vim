@@ -144,4 +144,3 @@ endif
 syntax enable
 colorscheme onedark
 
-source $HOME/.config/nvim/settings.vimrc
