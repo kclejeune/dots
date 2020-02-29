@@ -3,5 +3,10 @@
     "%2FUsers%2Fkclejeune%2Fprojects%2Fcolm%2Fcore": [
       "sort"
     ]
+  },
+  "commands": {
+    "%2FUsers%2Fkclejeune%2Fprojects%2Fcolm%2Fcore%2Fagent": [
+      "sort"
+    ]
   }
 }

@@ -1,16 +1,40 @@
-set tabstop=4 shiftwidth=4 expandtab
+" General Vim settings
 set number
-" Auto Strip Trailing Spaces
+set wrap
+set encoding=utf-8
+set wildmenu
+set lazyredraw
+set showmatch
+set ruler
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+set autoindent
+set smartindent
+
+" Keybindings
+nmap j gj
+nmap i gi
+
+" Search Settings
+set incsearch
+set hlsearch
+
+
+"" Auto Strip Trailing Spaces
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
     let c = col(".")
     %s/\s\+$//e
     call cursor(l, c)
 endfun
+
 " Apply to only certain files by default
 " autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 " Apply to all files by default
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -22,6 +46,7 @@ inoremap <silent><expr> <Tab>
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
 
+"" FZF SETTINGS
 "" Customize fzf colors to match your color scheme
 "" - fzf#wrap translates this to a set of `--color` options
 " let g:fzf_colors =
@@ -62,26 +87,26 @@ let $FZF_DEFAULT_OPTS="--color=dark --color=fg:15,bg:-1,hl:1,fg+:#ffffff,bg+:0,h
 " let g:fzf_layout = { 'window': 'call FloatingFZF(' . g:width . ',' . g:height . ')' }
 
 " Create Floating FZF window
-function! FloatingFZF(width, height)
-  let buf = nvim_create_buf(v:false, v:true)
-  call setbufvar(buf, '&signcolumn', 'no')
+" function! FloatingFZF(width, height)
+"   let buf = nvim_create_buf(v:false, v:true)
+"   call setbufvar(buf, '&signcolumn', 'no')
 
-  " let height = float2nr(10)
-  " let width = float2nr(80)
-  let height = a:height
-  let width = a:width
-  let horizontal = float2nr((&columns - width) / 2)
-  let vertical = 1
+"   " let height = float2nr(10)
+"   " let width = float2nr(80)
+"   let height = a:height
+"   let width = a:width
+"   let horizontal = float2nr((&columns - width) / 2)
+"   let vertical = 1
 
-  let opts = {
-        \ 'relative': 'editor',
-        \ 'row': vertical,
-        \ 'col': horizontal,
-        \ 'width': width,
-        \ 'height': height,
-        \ 'style' : 'minimal',
-        \ }
+"   let opts = {
+"         \ 'relative': 'editor',
+"         \ 'row': vertical,
+"         \ 'col': horizontal,
+"         \ 'width': width,
+"         \ 'height': height,
+"         \ 'style' : 'minimal',
+"         \ }
 
-  call nvim_open_win(buf, v:true, opts)
-endfunction
+"   call nvim_open_win(buf, v:true, opts)
+" endfunction
 
