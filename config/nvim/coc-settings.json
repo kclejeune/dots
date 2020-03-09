@@ -5,4 +5,7 @@
     "python.linting.pylintEnabled": true,
     "suggest.autoTrigger": "trigger",
     "coc.preferences.formatOnSaveFiletypes": ["python", "json", "java", "javascript"],
+    "javascript.preferences.quoteStyle": "double",
+    "javascript.format.insertSpaceAfterCommaDelimiter": true,
+    "javascript.format.semicolons": "insert",
 }

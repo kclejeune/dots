@@ -1,10 +1,12 @@
+OS=$(uname -s)
+
 ##############################################################
 # PLUGINS
 ##############################################################
 
 # Check if zplug is installed
 if [[ ! -d ~/.zplug ]]; then
-  git clone https://github.com/zplug/zplug ~/.zplug
+    git clone https://github.com/zplug/zplug ~/.zplug
 fi
 
 # Essential
@@ -20,19 +22,20 @@ zplug "plugins/command-not-foudn", from:oh-my-zsh
 zplug "plugins/sudo", from:oh-my-zsh
 zplug "plugins/common-aliases", from:oh-my-zsh
 zplug "zsh-users/zsh-completions"
-# Load the theme.
 zplug "zsh-users/zsh-autosuggestions", defer:3
 zplug "zsh-users/zsh-syntax-highlighting", defer:3
-if [[ $(uname -s) == 'Darwin' ]]; then
+
+if [[ $OS == 'Darwin' ]]; then
     zplug "plugins/brew", from:oh-my-zsh
     zplug "plugins/osx", from:oh-my-zsh
-elif [[ $(uname -s) == 'Linux' ]]; then
+elif [[ $OS == 'Linux' ]]; then
     if [[ ! -d $HOME/.fnm ]]; then
         curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash
     fi
     export PATH=$HOME/.fnm:$PATH
 fi
 
+# Load the theme.
 zplug "themes/agnoster", from:oh-my-zsh, defer:3
 
 # Install packages that have not been installed yet
@@ -57,7 +60,7 @@ eval "$(direnv hook zsh)"
 ###########################################################
 
 # Homebrew Completions
-if [[ $(uname) == "Darwin" ]]; then
+if [[ $OS == "Darwin" ]]; then
     if type brew &>/dev/null; then
       FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
     fi
@@ -91,14 +94,38 @@ function config() {
 ###########################################################
 # ALIASES
 ###########################################################
+# always prefer neovim
 alias vim="nvim"
+# stupid cute weather thing
 alias weather="curl wttr.in"
+# update dotfile symlinks from version control
 alias dotlink="$HOME/system/install"
 # alias git to use hub wrapper
 eval "$(hub alias -s)"
 
 # macOS Specific Aliases
-if [[ $(uname -s) == 'Darwin' ]]; then
+if [[ $OS == 'Darwin' ]]; then
     alias brewup="brew upgrade && brew cask upgrade && brew cleanup"
 fi
+
+###########################################################
+# Exports
+##########################################################
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
+# macOS specific variables
+if [[ $OS == 'Darwin' ]]; then
+    # map python and pip to python3 and pip3 respectively
+    export PATH=/usr/local/opt/python/libexec/bin:$PATH
+fi
+
+# variable exports
+export GPG_TTY=/dev/ttys000
+export VISUAL=nvim
+export EDITOR=nvim
+export DEFAULT_USER="$(whoami)"
+export BAT_CONFIG_PATH="$HOME/.config/bat/bat.conf"
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
 

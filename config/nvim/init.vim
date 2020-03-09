@@ -10,23 +10,25 @@ endif
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
-    Plug 'tpope/vim-sensible'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-surround'
-    Plug 'tpope/vim-commentary'
-    Plug 'ranger/ranger'
-    if isdirectory('/usr/local/opt/fzf')
-      Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
-    else
-      Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-      Plug 'junegunn/fzf.vim'
-    endif
-
     " Ignore language specific/IDE-esque features when using vscode
     if !exists('g:vscode')
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'dense-analysis/ale'
-    Plug 'joshdick/onedark.vim'
+        Plug 'tpope/vim-sensible'
+        Plug 'tpope/vim-fugitive'
+        Plug 'tpope/vim-surround'
+        Plug 'tpope/vim-commentary'
+        Plug 'ranger/ranger'
+        if isdirectory('/usr/local/opt/fzf')
+            Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+        else
+            Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+            Plug 'junegunn/fzf.vim'
+        endif
+
+        Plug 'neoclide/coc.nvim', {'branch': 'release'}
+        Plug 'dense-analysis/ale'
+        Plug 'vim-scripts/awk.vim'
+        Plug 'justinmk/vim-sneak'
+        Plug 'joshdick/onedark.vim'
     endif
 call plug#end()
 
@@ -40,10 +42,10 @@ set wrap
 set encoding=utf-8
 set wildmenu
 set lazyredraw
-set showmatch
 set ruler
 set tabstop=4
 set shiftwidth=4
+set showmatch
 set expandtab
 set softtabstop=4
 set autoindent
@@ -118,7 +120,7 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
 
 let g:preview_width = float2nr(&columns * 0.7)
 let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
-let $FZF_DEFAULT_OPTS="--color=dark --color=fg:15,bg:-1,hl:1,fg+:#ffffff,bg+:0,hl+:1 --color=info:0,prompt:0,pointer:12,marker:4,spinner:11,header:-1 --layout=reverse  --margin=1,4 --preview 'if file -i {}|grep -q binary; then file -b {}; else bat --style=changes --theme='TwoDark' --color always --line-range :40 {}; fi' --preview-window right:" . g:preview_width
+let $FZF_DEFAULT_OPTS="--layout=reverse  --margin=1,4 --preview 'if file -i {}|grep -q binary; then file -b {}; else bat --style=changes --color always --line-range :40 {}; fi' --preview-window right:" . g:preview_width
 
 
 
