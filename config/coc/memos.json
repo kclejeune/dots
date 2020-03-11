@@ -26,7 +26,7 @@
         "sysPrefix": "/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "5fdad1645c3ffb000c56ba18e869d8d84ee26e1e1df27084a44929fbf2717c9a36c664cfdccd49e5dd1942efe8add39927061dc25dc8c729e788b3755fb2beed"
       },
-      "expiry": 1583700670443
+      "expiry": 1583980858667
     },
     "/usr/local/bin/python.v3": {
       "data": {
@@ -51,7 +51,7 @@
         "sysPrefix": "/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "4f19c2a2191aff202dc064860bd0c08e4c73d7ae03a53f3383324ce02601f2e112962e12bffadcac9cd5b250ab689289f0e5d83222d1297c62fccf2f8fe9c7d9"
       },
-      "expiry": 1583700670446
+      "expiry": 1583980858614
     },
     "/usr/local/bin/python3.7.v3": {
       "data": {
@@ -76,7 +76,7 @@
         "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
         "fileHash": "2d51ec30e38b199425e42437436b4e0d0f4cc198b29f8ef57a2f9c8d37ecc0955390c24d01ef5b430c6d2e7ee11b4fc34db23efbe5b6d44ccbf673be3f3c5977"
       },
-      "expiry": 1583700670479
+      "expiry": 1583980858664
     },
     "/usr/local/bin/python3.v3": {
       "data": {
@@ -101,7 +101,7 @@
         "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
         "fileHash": "9c9702ffaf11ae7e2704389b2890a9c7430c8df51849e31b963927ca00376a6e300817bb7879259b91ed34a0885fb4e69249629a584173c18a02e70ac810fd82"
       },
-      "expiry": 1583700670480
+      "expiry": 1583980858665
     },
     "/usr/local/bin/python2.7.v3": {
       "data": {
@@ -126,7 +126,7 @@
         "sysPrefix": "/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "0d2c8a42fc3f8e5a942c7003b241d7486ed959c17eed35250cde6c6127405f5aff46b9a735a2b44b90a4ad5e5df21f8afb9e3e23e77452d0fb271809906d9465"
       },
-      "expiry": 1583700670437
+      "expiry": 1583980858607
     },
     "/usr/local/opt/python/libexec/bin/python.v3": {
       "data": {
@@ -151,7 +151,7 @@
         "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
         "fileHash": "62a4c26f19c66b2ea57e446b35cc536390a886a2de8c66d5b5cff3d68c6d29f67fb0bbb0090129a649fd7b660d7e783f6075daf637a9e620e68ed1eaea878ba9"
       },
-      "expiry": 1583700670448
+      "expiry": 1583980858615
     },
     "/usr/bin/python2.7.v3": {
       "data": {
@@ -176,7 +176,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "8ce1e1a7594138694b8dff39bc25213c601601b9bcc5038e44be5ac533a2e1e0c8cf453d5e2c09aa626fd115e34b96dc1c8a45a05b89fdbb49133cf935f9bf84"
       },
-      "expiry": 1583700670498
+      "expiry": 1583980858662
     },
     "/usr/bin/python2.v3": {
       "data": {
@@ -201,7 +201,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "1388cb11d2a293e55023395d6607cd1ae9e2e0979725f46d64a25b328ef7a29229a60e1dad722a59067d95b433b193138dac1ad4a52d589e212cb6b105bd2fa3"
       },
-      "expiry": 1583700670477
+      "expiry": 1583980858661
     },
     "/usr/bin/python.v3": {
       "data": {
@@ -226,7 +226,7 @@
         "sysPrefix": "/System/Library/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "477cb608a45dbedb20fb1ddfc7b36013d3232bdd211181326d3271970c379820b0f125a6e213c93ea72a9152b40139c8143a060c699188acbf1904af8bb9d7c1"
       },
-      "expiry": 1583700670475
+      "expiry": 1583980858658
     },
     "/Users/kclejeune/Projects/colm/venv/bin/python3.7.v3": {
       "data": {
@@ -350,7 +350,7 @@
         "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
         "fileHash": "556c43cd9d599caba6ac43e4a099432fedf4b43a557e0b7a163c8ea08dc7fe6b3099341797ffaa21ce19c1fb50ce22e68f8ff407481bdba6935e3cdc835d7fc2"
       },
-      "expiry": 1583700670524
+      "expiry": 1583980858733
     },
     "/usr/local/opt/python@2/bin/python2.7.v3": {
       "data": {
@@ -375,7 +375,7 @@
         "sysPrefix": "/usr/local/Cellar/python@2/2.7.17_1/Frameworks/Python.framework/Versions/2.7",
         "fileHash": "3a43b83bf4e3d3fc1645704afa5356abedeef8f5cdd9886b152031e07b695b870523f3f46761af9408793755219b438a53de5ecdff72d8ac13a9089490bf06f1"
       },
-      "expiry": 1583700670526
+      "expiry": 1583980858713
     },
     "INTERPRETERS_CACHE_v3_CurrentPathService": [
       {
@@ -472,7 +472,7 @@
       },
       {
         "architecture": 3,
-        "path": "/Users/kclejeune/Projects/colm/venv/bin/python3",
+        "path": "/usr/local/opt/python/bin/python3.7",
         "version": {
           "options": {
             "loose": false,
@@ -489,8 +489,8 @@
           "build": [],
           "version": "3.7.6-final"
         },
-        "sysPrefix": "/Users/kclejeune/Projects/colm/venv/bin/..",
-        "fileHash": "59dc0785614423709c117dab6f50efbec84698d465b01ad56ae9a5bb4b25efa92799e77d68dc704f2802924106238a88fcbb009ad5b9deb93f0f628d2d3ae05e",
+        "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
+        "fileHash": "556c43cd9d599caba6ac43e4a099432fedf4b43a557e0b7a163c8ea08dc7fe6b3099341797ffaa21ce19c1fb50ce22e68f8ff407481bdba6935e3cdc835d7fc2",
         "type": "Unknown"
       }
     ],
@@ -547,7 +547,7 @@
         "sysPrefix": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.7",
         "fileHash": "2ab7fbb532f3d82ef242091969d912b8c6a167c769d96ca74c605e971baa21bf3ef43c6487b87fbefb3e7be1bd6b3b1ae4c130fd6e3071a4f386da23eb8640d7"
       },
-      "expiry": 1583700670655
+      "expiry": 1583980858705
     },
     "INTERPRETERS_CACHE_v3_KnownPathsService": [
       {
@@ -1036,7 +1036,7 @@
         "displayName": "Python 3.7.6 64-bit",
         "hash": "556c43cd9d599caba6ac43e4a099432fedf4b43a557e0b7a163c8ea08dc7fe6b3099341797ffaa21ce19c1fb50ce22e68f8ff407481bdba6935e3cdc835d7fc2-3bc17834b1ce678f1a3b7969bd42f66d"
       },
-      "expiry": 1583700670619
+      "expiry": 1583980858741
     },
     "/usr/local/opt/python@2/bin/python2.7.interpreter.displayName.v7": {
       "data": {
@@ -1067,7 +1067,8 @@
       "sysPrefix": "/Users/kclejeune/Projects/colm/venv/bin/..",
       "fileHash": "59dc0785614423709c117dab6f50efbec84698d465b01ad56ae9a5bb4b25efa92799e77d68dc704f2802924106238a88fcbb009ad5b9deb93f0f628d2d3ae05e",
       "type": "Unknown",
-      "displayName": "Python 3.7.6 64-bit ('venv': virtualenv)"
+      "cachedEntry": true,
+      "displayName": "Python 3.7.6 64-bit"
     },
     "/Users/kclejeune/Projects/colm/venv/bin/python.interpreter.Details.v7": {
       "data": {
@@ -1274,10 +1275,12 @@
           "sysPrefix": "/usr/local/Cellar/python/3.7.6_1/Frameworks/Python.framework/Versions/3.7",
           "fileHash": "556c43cd9d599caba6ac43e4a099432fedf4b43a557e0b7a163c8ea08dc7fe6b3099341797ffaa21ce19c1fb50ce22e68f8ff407481bdba6935e3cdc835d7fc2",
           "type": "Unknown",
-          "displayName": "Python 3.7.6 64-bit"
+          "cachedEntry": true,
+          "displayName": "Python 3.7.6 64-bit",
+          "__store": true
         }
       },
-      "expiry": 1583700670669
+      "expiry": 1583980858720
     },
     "/usr/local/opt/python@2/bin/python2.7.interpreter.Details.v7": {
       "data": {
@@ -1338,7 +1341,7 @@
       "sysPrefix": "/Users/kclejeune/Projects/colm/venv/bin/..",
       "fileHash": "59dc0785614423709c117dab6f50efbec84698d465b01ad56ae9a5bb4b25efa92799e77d68dc704f2802924106238a88fcbb009ad5b9deb93f0f628d2d3ae05e",
       "type": "Unknown",
-      "displayName": "Python 3.7.6 64-bit"
+      "displayName": "Python 3.7.6 64-bit ('venv': virtualenv)"
     },
     "/Users/kclejeune/Projects/crypto/venv/bin/python3.7.v3": {
       "data": {
@@ -2150,7 +2153,8 @@
       },
       "sysPrefix": "/Users/kclejeune/Projects/colm/venv/bin/..",
       "fileHash": "59dc0785614423709c117dab6f50efbec84698d465b01ad56ae9a5bb4b25efa92799e77d68dc704f2802924106238a88fcbb009ad5b9deb93f0f628d2d3ae05e",
-      "type": "Unknown"
+      "type": "Unknown",
+      "cachedEntry": true
     },
     "/Users/kclejeune/projects/castle/venv/bin/python3.v3": {
       "data": {

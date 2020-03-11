@@ -29,6 +29,7 @@ call plug#begin('~/.vim/plugged')
         Plug 'vim-scripts/awk.vim'
         Plug 'justinmk/vim-sneak'
         Plug 'joshdick/onedark.vim'
+        Plug 'alvan/vim-closetag'
     endif
 call plug#end()
 
