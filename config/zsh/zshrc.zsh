@@ -25,10 +25,10 @@ zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-autosuggestions", defer:3
 zplug "zsh-users/zsh-syntax-highlighting", defer:3
 
-if [[ $OS == 'Darwin' ]]; then
+if [[ $OS == "Darwin" ]]; then
     zplug "plugins/brew", from:oh-my-zsh
     zplug "plugins/osx", from:oh-my-zsh
-elif [[ $OS == 'Linux' ]]; then
+elif [[ $OS == "Linux" ]]; then
     if [[ ! -d $HOME/.fnm ]]; then
         curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash
     fi
@@ -51,9 +51,10 @@ fi
 zplug load
 
 # load fnm completions
-eval "$(fnm env --multi)"
+[[ -d $HOME/.fnm ]] && eval "$(fnm env --multi)"
+
 # load plugin completions
-eval "$(direnv hook zsh)"
+command -v direnv && eval "$(direnv hook zsh)"
 
 ###########################################################
 # SHELL COMPLETIONS
@@ -65,8 +66,10 @@ if [[ $OS == "Darwin" ]]; then
       FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
     fi
 fi
+
 # Completion for kitty
-kitty + complete setup zsh | source /dev/stdin
+command -v kitty && kitty + complete setup zsh | source /dev/stdin
+
 # completion for fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -104,7 +107,7 @@ alias dotlink="$HOME/system/install"
 eval "$(hub alias -s)"
 
 # macOS Specific Aliases
-if [[ $OS == 'Darwin' ]]; then
+if [[ $OS == "Darwin" ]]; then
     alias brewup="brew upgrade && brew cask upgrade && brew cleanup"
 fi
 
@@ -115,7 +118,7 @@ fi
 export LANG=en_US.UTF-8
 
 # macOS specific variables
-if [[ $OS == 'Darwin' ]]; then
+if [[ $OS == "Darwin" ]]; then
     # map python and pip to python3 and pip3 respectively
     export PATH=/usr/local/opt/python/libexec/bin:$PATH
 fi
