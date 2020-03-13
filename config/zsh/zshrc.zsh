@@ -54,7 +54,7 @@ zplug load
 [[ -d $HOME/.fnm ]] && eval "$(fnm env --multi)"
 
 # load plugin completions
-command -v direnv && eval "$(direnv hook zsh)"
+command -v direnv > /dev/null && eval "$(direnv hook zsh)"
 
 ###########################################################
 # SHELL COMPLETIONS
@@ -68,7 +68,7 @@ if [[ $OS == "Darwin" ]]; then
 fi
 
 # Completion for kitty
-command -v kitty && kitty + complete setup zsh | source /dev/stdin
+command -v kitty > /dev/null && kitty + complete setup zsh | source /dev/stdin
 
 # completion for fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
