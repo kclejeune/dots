@@ -54,21 +54,19 @@ zplug load
 [[ -d $HOME/.fnm ]] && eval "$(fnm env --multi)"
 
 # load plugin completions
-command -v direnv > /dev/null && eval "$(direnv hook zsh)"
+type direnv &> /dev/null && eval "$(direnv hook zsh)"
 
 ###########################################################
 # SHELL COMPLETIONS
 ###########################################################
 
 # Homebrew Completions
-if [[ $OS == "Darwin" ]]; then
-    if type brew &>/dev/null; then
-      FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-    fi
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
 
 # Completion for kitty
-command -v kitty > /dev/null && kitty + complete setup zsh | source /dev/stdin
+type kitty > /dev/null && kitty + complete setup zsh | source /dev/stdin
 
 # completion for fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -94,6 +92,40 @@ function config() {
     cd "$HOME/.config/$1"
 }
 
+function wcaUpdate() {
+    # always remove lingering zip archives before we proceed
+    if [[ -e wcaExport.sql.zip ]]; then
+        rm wcaExport.sql.zip
+    fi
+
+    # remove and redownload the file if the current export is more than 1 day old
+    if [[ $(find "WCA_export.sql" -mtime +1 -print) ]]; then
+        rm WCA_Export.sql
+        echo "Downloading Current WCA Export"
+        curl -# -o wcaExport.sql.zip https://www.worldcubeassociation.org/results/misc/WCA_export.sql.zip
+        # extract the sql dump
+        unzip wcaExport.sql.zip WCA_export.sql && rm wcaExport.sql.zip
+    fi
+
+    # specify a .sqlPass with root user password and nothing else, otherwise prompt for the password
+    if [[ -e .sqlPass ]]; then
+        pass=$(cat .sqlPass)
+    else
+        read -s -p "MySQL Password: " pass
+    fi
+
+    echo "Importing Database"
+    # import sql dump
+    mysql -u root --password=$pass wca < WCA_export.sql
+
+    echo "Database import complete. Removing archived export files."
+
+    # clean up files, leave sql dump file until the next update
+    rm wcaExport.sql.zip
+    clear
+    echo Updated $(date) >> .updateLog
+}
+
 ###########################################################
 # ALIASES
 ###########################################################
@@ -104,7 +136,7 @@ alias weather="curl wttr.in"
 # update dotfile symlinks from version control
 alias dotlink="$HOME/system/install"
 # alias git to use hub wrapper
-eval "$(hub alias -s)"
+type hub &> /dev/null && eval "$(hub alias -s)"
 
 # macOS Specific Aliases
 if [[ $OS == "Darwin" ]]; then
@@ -131,4 +163,9 @@ export DEFAULT_USER="$(whoami)"
 export BAT_CONFIG_PATH="$HOME/.config/bat/bat.conf"
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-
+# --files: List files that would be searched but do not search
+# --no-ignore: Do not respect .gitignore, etc...
+# --hidden: Search hidden files and folders
+# --follow: Follow symlinks
+# --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+# export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
