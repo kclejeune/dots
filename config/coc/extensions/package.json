@@ -1,17 +1,17 @@
 {
   "dependencies": {
-    "coc-css": ">=1.2.2",
-    "coc-git": ">=1.7.7",
+    "coc-css": ">=1.2.3",
+    "coc-git": ">=1.7.9",
     "coc-go": ">=0.7.0",
-    "coc-html": ">=1.2.3",
-    "coc-java": ">=1.4.8",
+    "coc-html": ">=1.2.4",
+    "coc-java": ">=1.4.10",
     "coc-json": ">=1.2.5",
     "coc-marketplace": ">=1.7.0",
     "coc-pairs": ">=1.2.21",
-    "coc-prettier": ">=1.1.11",
-    "coc-python": ">=1.2.9",
-    "coc-snippets": ">=2.1.22",
-    "coc-tsserver": ">=1.4.12",
-    "coc-vimtex": ">=1.0.2"
+    "coc-prettier": ">=1.1.12",
+    "coc-python": ">=1.2.12",
+    "coc-snippets": ">=2.1.26",
+    "coc-tsserver": ">=1.5.1",
+    "coc-vimtex": ">=1.0.3"
   }
 }

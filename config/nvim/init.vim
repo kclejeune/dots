@@ -17,13 +17,8 @@ call plug#begin('~/.vim/plugged')
         Plug 'tpope/vim-surround'
         Plug 'tpope/vim-commentary'
         Plug 'ranger/ranger'
-        if isdirectory('/usr/local/opt/fzf')
-            Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
-        else
-            Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-            Plug 'junegunn/fzf.vim'
-        endif
-
+        Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+        Plug 'junegunn/fzf.vim'
         Plug 'neoclide/coc.nvim', {'branch': 'release'}
         Plug 'dense-analysis/ale'
         Plug 'vim-scripts/awk.vim'
