@@ -50,20 +50,19 @@ fi
 
 zplug load
 
-# load fnm completions
-[[ -d $HOME/.fnm ]] && eval "$(fnm env --multi)"
-
-# load plugin completions
-type direnv &> /dev/null && eval "$(direnv hook zsh)"
 
 ###########################################################
 # SHELL COMPLETIONS
 ###########################################################
 
+# load fnm completions
+[[ -d $HOME/.fnm ]] && eval "$(fnm env --multi)"
+
+# load plugin completions
+type direnv > /dev/null && eval "$(direnv hook zsh)"
+
 # Homebrew Completions
-if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-fi
+type brew > /dev/null && FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 
 # Completion for kitty
 type kitty > /dev/null && kitty + complete setup zsh | source /dev/stdin
@@ -74,6 +73,7 @@ type kitty > /dev/null && kitty + complete setup zsh | source /dev/stdin
 ###########################################################
 # FUNCTION DEFINITIONS
 ###########################################################
+
 function mkvenv() {
     if [[ -z "$1" ]]; then
         DIR="venv"
@@ -92,18 +92,23 @@ function mkvenv() {
     fi
 
     # make a new virtual environment with the desired directory name
-    virtualenv ./$DIR
+    if type virtualenv > /dev/null; then
+        virtualenv ./$DIR
+    else
+        python3 -m venv ./$DIR
+    fi
 
+    # create .envrc if it isn't already there
     touch .envrc
-    cat .envrc | grep "source $DIR/bin/activate" &> /dev/null || echo "source $DIR/bin/activate" >> .envrc
-    cat .envrc | grep "unset PS1" &> /dev/null || echo "unset PS1" >> .envrc
+    cat .envrc | grep "source $DIR/bin/activate" > /dev/null || echo "source $DIR/bin/activate" >> .envrc
+    cat .envrc | grep "unset PS1" > /dev/null || echo "unset PS1" >> .envrc
 
     touch .gitignore
     cat .gitignore | grep .env
-    cat .gitignore | grep .envrc &> /dev/null || echo .envrc >>.gitignore
-    cat .gitignore | grep $DIR &> /dev/null || echo "$DIR/" >>.gitignore
+    cat .gitignore | grep .envrc > /dev/null ||echo .envrc >>.gitignore
+    cat .gitignore | grep $DIR > /dev/null ||echo "$DIR/" >>.gitignore
 
-    direnv allow
+    type direnv > /dev/null && direnv allow
 }
 
 function weather() {
@@ -150,6 +155,9 @@ export DEFAULT_USER="$(whoami)"
 export BAT_CONFIG_PATH="$HOME/.config/bat/bat.conf"
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_DATA_HOME=$HOME/.local/share
+
 # --files: List files that would be searched but do not search
 # --no-ignore: Do not respect .gitignore, etc...
 # --hidden: Search hidden files and folders
