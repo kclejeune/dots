@@ -1,5 +1,18 @@
 OS=$(uname -s)
 
+# variable exports
+export GPG_TTY=/dev/ttys000
+export VISUAL=nvim
+export EDITOR=nvim
+export DEFAULT_USER="$(whoami)"
+export BAT_CONFIG_PATH="$HOME/.config/bat/bat.conf"
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_DATA_HOME=$HOME/.local/share
+export KAGGLE_CONFIG_DIR=$XDG_CONFIG_HOME/kaggle
+
+
 ##############################################################
 # PLUGINS
 ##############################################################
@@ -117,7 +130,7 @@ function weather() {
 
 function config() {
     # navigate to the config file for a specific app
-    cd "$HOME/.config/$1"
+    cd "$XDG_CONFIG_HOME/$1"
 }
 
 ###########################################################
@@ -146,17 +159,6 @@ if [[ $OS == "Darwin" ]]; then
     # map python and pip to python3 and pip3 respectively
     export PATH=/usr/local/opt/python/libexec/bin:$PATH
 fi
-
-# variable exports
-export GPG_TTY=/dev/ttys000
-export VISUAL=nvim
-export EDITOR=nvim
-export DEFAULT_USER="$(whoami)"
-export BAT_CONFIG_PATH="$HOME/.config/bat/bat.conf"
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_DATA_HOME=$HOME/.local/share
 
 # --files: List files that would be searched but do not search
 # --no-ignore: Do not respect .gitignore, etc...
