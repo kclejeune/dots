@@ -136,12 +136,9 @@ function config() {
 ###########################################################
 # ALIASES
 ###########################################################
-# always prefer neovim
-alias vim="nvim"
+
 # update dotfile symlinks from version control
 alias dotlink="$HOME/system/install"
-# alias git to use hub wrapper
-type hub &> /dev/null && eval "$(hub alias -s)"
 
 # macOS Specific Aliases
 if [[ $OS == "Darwin" ]]; then
