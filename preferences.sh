@@ -51,7 +51,9 @@ defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
 defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
 defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
-# Minimize Windows Into Their Application’s Icon
-defaults write com.apple.dock minimize-to-application -bool true
+defaults write -g ApplePressAndHoldEnabled -bool false
 
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
+# set keyrepeat to fastest settings
+defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 2
+
