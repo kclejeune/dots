@@ -64,12 +64,6 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:3
 # Load the theme.
 zplug "themes/agnoster", from:oh-my-zsh, defer:3
 
-if [[ $OS == "Darwin" ]]; then
-    zplug "plugins/brew", from:oh-my-zsh
-    zplug "plugins/osx", from:oh-my-zsh
-elif [[ $OS == "Linux" ]]; then
-fi
-
 # Install packages that have not been installed yet
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -79,8 +73,6 @@ if ! zplug check --verbose; then
         echo
     fi
 fi
-
-zplug load
 
 ###########################################################
 # SHELL COMPLETIONS
@@ -106,8 +98,9 @@ type direnv > /dev/null && eval "$(direnv hook zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # initialise completions with ZSH's compinit
-autoload -Uz compinit
-compinit
+# autoload -Uz compinit
+# compinit
+zplug load
 
 ###########################################################
 # FUNCTION DEFINITIONS
