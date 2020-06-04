@@ -12,8 +12,8 @@
       path: config/*
     ~/.zshrc: ~/.config/zsh/zshrc.zsh
     ~/.asdf:
-      glob: true
-      path: asdf/*
+      # glob: true
+      path: asdf
 - link:
     ~/.config/:
       if: '[ `uname` = Darwin ]'
