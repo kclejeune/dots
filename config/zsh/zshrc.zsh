@@ -12,6 +12,10 @@ export EDITOR=nvim
 export DEFAULT_USER="$(whoami)"
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+
+#########################################################
+# Environment Variables
+#########################################################
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
 export ASDF_CONFIG_DIR=$XDG_CONFIG_HOME/asdf
