@@ -3,20 +3,23 @@ OS=$(uname -s)
 ###########################################################
 # Exports
 ##########################################################
+
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 export GPG_TTY=/dev/ttys000
 export VISUAL=nvim
 export EDITOR=nvim
 export DEFAULT_USER="$(whoami)"
-export BAT_CONFIG_PATH="$HOME/.config/bat/bat.conf"
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
-export KAGGLE_CONFIG_DIR=$XDG_CONFIG_HOME/kaggle
+export ASDF_CONFIG_DIR=$XDG_CONFIG_HOME/asdf
 export ASDF_DATA_DIR=$XDG_DATA_HOME/asdf
-export ASDF_CONFIG_FILE=$ASDF_DATA_DIR/asdfrc
+export ASDF_CONFIG_FILE=$ASDF_CONFIG_DIR/asdfrc
+export ASDF_DEFAULT_TOOL_VERSIONS_FILENAME=$ASDF_CONFIG_DIR/tool-versions
+export KAGGLE_CONFIG_DIR=$XDG_CONFIG_HOME/kaggle
+export BAT_CONFIG_PATH="$HOME/.config/bat/bat.conf"
 
 ###########################################################
 # ALIASES
