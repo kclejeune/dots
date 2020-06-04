@@ -1,6 +1,10 @@
 OS=$(uname -s)
 
-# variable exports
+###########################################################
+# Exports
+##########################################################
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
 export GPG_TTY=/dev/ttys000
 export VISUAL=nvim
 export EDITOR=nvim
@@ -11,7 +15,20 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
 export KAGGLE_CONFIG_DIR=$XDG_CONFIG_HOME/kaggle
+export ASDF_DATA_DIR=$XDG_DATA_HOME/asdf
+export ASDF_CONFIG_FILE=$ASDF_DATA_DIR/asdfrc
 
+###########################################################
+# ALIASES
+###########################################################
+
+# update dotfile symlinks from version control
+alias dotlink="$HOME/system/install"
+
+# macOS Specific Aliases
+if [[ $OS == "Darwin" ]]; then
+    alias brewup="brew upgrade && brew cask upgrade && brew cleanup"
+fi
 
 ##############################################################
 # PLUGINS
@@ -37,19 +54,14 @@ zplug "plugins/common-aliases", from:oh-my-zsh
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-autosuggestions", defer:3
 zplug "zsh-users/zsh-syntax-highlighting", defer:3
+# Load the theme.
+zplug "themes/agnoster", from:oh-my-zsh, defer:3
 
 if [[ $OS == "Darwin" ]]; then
     zplug "plugins/brew", from:oh-my-zsh
     zplug "plugins/osx", from:oh-my-zsh
 elif [[ $OS == "Linux" ]]; then
-    if [[ ! -d $HOME/.fnm ]]; then
-        curl -fsSL https://github.com/Schniz/fnm/raw/master/.ci/install.sh | bash
-    fi
-    export PATH=$HOME/.fnm:$PATH
 fi
-
-# Load the theme.
-zplug "themes/agnoster", from:oh-my-zsh, defer:3
 
 # Install packages that have not been installed yet
 if ! zplug check --verbose; then
@@ -63,25 +75,32 @@ fi
 
 zplug load
 
-
 ###########################################################
 # SHELL COMPLETIONS
 ###########################################################
 
-# load fnm completions
-[[ -d $HOME/.fnm ]] && eval "$(fnm env --multi)"
+# Homebrew Completions if on macOS
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
 
-# load plugin completions
-type direnv > /dev/null && eval "$(direnv hook zsh)"
-
-# Homebrew Completions
-type brew > /dev/null && FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+# load ASDF into shell
+source $HOME/.asdf/asdf.sh
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
 
 # Completion for kitty
 type kitty > /dev/null && kitty + complete setup zsh | source /dev/stdin
 
+# load direnv completions
+type direnv > /dev/null && eval "$(direnv hook zsh)"
+
 # completion for fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# initialise completions with ZSH's compinit
+autoload -Uz compinit
+compinit
 
 ###########################################################
 # FUNCTION DEFINITIONS
@@ -132,30 +151,6 @@ function config() {
     # navigate to the config file for a specific app
     cd "$XDG_CONFIG_HOME/$1"
 }
-
-###########################################################
-# ALIASES
-###########################################################
-
-# update dotfile symlinks from version control
-alias dotlink="$HOME/system/install"
-
-# macOS Specific Aliases
-if [[ $OS == "Darwin" ]]; then
-    alias brewup="brew upgrade && brew cask upgrade && brew cleanup"
-fi
-
-###########################################################
-# Exports
-##########################################################
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-
-# macOS specific variables
-if [[ $OS == "Darwin" ]]; then
-    # map python and pip to python3 and pip3 respectively
-    export PATH=/usr/local/opt/python/libexec/bin:$PATH
-fi
 
 # --files: List files that would be searched but do not search
 # --no-ignore: Do not respect .gitignore, etc...
