@@ -1,3 +1,5 @@
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
 - defaults:
     link:
       create: true
@@ -22,5 +24,3 @@
       if: '[ `uname` = Linux ]'
       glob: true
       path: config-linux/*
-- shell:
-  - [git submodule update --init --recursive, Installing submodules]
