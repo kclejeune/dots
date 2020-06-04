@@ -19,7 +19,7 @@ export ASDF_DATA_DIR=$XDG_DATA_HOME/asdf
 export ASDF_CONFIG_FILE=$ASDF_CONFIG_DIR/asdfrc
 export ASDF_DEFAULT_TOOL_VERSIONS_FILENAME=$ASDF_CONFIG_DIR/tool-versions
 export KAGGLE_CONFIG_DIR=$XDG_CONFIG_HOME/kaggle
-export BAT_CONFIG_PATH="$HOME/.config/bat/bat.conf"
+export BAT_CONFIG_PATH=$XDG_CONFIG_HOME/bat/bat.conf
 
 ###########################################################
 # ALIASES
