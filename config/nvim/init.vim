@@ -16,7 +16,7 @@ call plug#begin('~/.vim/plugged')
         Plug 'tpope/vim-commentary'
         Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
         Plug 'junegunn/fzf.vim'
-        Plug 'neoclide/coc.nvim', {'branch': 'release'}
+        Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
         Plug 'vim-scripts/awk.vim'
         Plug 'justinmk/vim-sneak'
         Plug 'joshdick/onedark.vim'
