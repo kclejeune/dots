@@ -1,6 +1,6 @@
-# macOS Setup Tool
+# HPC Dotfile Setup Tool
 
-Contains a collection of packages and dotfiles for a variety of macOS utilities. To install on a new system, run:
+A set of non-sudo, HPC compatible dotfiles and config settings.
 
 ```bash
 git clone https://github.com/kclejeune/system.git && ./system/preferences.sh && ./system/install && ./system/packages.sh

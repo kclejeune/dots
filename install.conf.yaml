@@ -10,17 +10,5 @@
     ~/.config/:
       glob: true
       path: config/*
-    ~/.zshrc: ~/.config/zsh/zshrc.zsh
     ~/.asdf:
-      # glob: true
       path: asdf
-- link:
-    ~/.config/:
-      if: '[ `uname` = Darwin ]'
-      glob: true
-      path: config-mac/*
-- link:
-    ~/.config/:
-      if: '[ `uname` = Linux ]'
-      glob: true
-      path: config-linux/*

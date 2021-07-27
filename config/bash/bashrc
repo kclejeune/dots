@@ -1,0 +1,146 @@
+#########################################################
+# Environment Variables
+#########################################################
+
+# system stuff
+export LANG=en_US.UTF-8
+export GPG_TTY=/dev/ttys000
+export VISUAL=nvim
+export EDITOR=nvim
+export DEFAULT_USER="$(whoami)"
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+export PATH=$HOME/.local/bin:$HOME/bin:$PATH
+
+# user stuff
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_DATA_HOME=$HOME/.local/share
+export ASDF_CONFIG_DIR=$XDG_CONFIG_HOME/asdf
+export ASDF_DATA_DIR=$XDG_DATA_HOME/asdf
+export ASDF_CONFIG_FILE=$ASDF_CONFIG_DIR/asdfrc
+export ASDF_DEFAULT_TOOL_VERSIONS_FILENAME=$ASDF_CONFIG_DIR/tool-versions
+export BAT_CONFIG_PATH=$XDG_CONFIG_HOME/bat/bat.conf
+# --files: List files that would be searched but do not search
+# --no-ignore: Do not respect .gitignore, etc...
+# --hidden: Search hidden files and folders
+# --follow: Follow symlinks
+# --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+export FZF_DEFAULT_COMMAND="rg --files --no-ignore --hidden --follow --glob '!.git/*'"
+export FZF_DEFAULT_OPTS="--height 50% --border"
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always --plain --line-range=:200 {}'"
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
+
+###########################################################
+# ALIASES
+###########################################################
+
+# update dotfile symlinks from version control
+alias dotlink="$HOME/system/install"
+alias vim="nvim"
+
+###########################################################
+# Environment Configuration
+###########################################################
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+eval "$(direnv hook bash)"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Zoxide
+# =============================================================================
+#
+# Utility functions for zoxide.
+#
+# pwd based on the value of _ZO_RESOLVE_SYMLINKS.
+function __zoxide_pwd() {
+    \builtin pwd -L
+}
+# cd + custom logic based on the value of _ZO_ECHO.
+function __zoxide_cd() {
+    # shellcheck disable=SC2164
+    \builtin cd "$@"
+}
+# =============================================================================
+#
+# Hook configuration for zoxide.
+#
+# Hook to add new entries to the database.
+function __zoxide_hook() {
+    \builtin local -r __zoxide_retval="$?"
+    \builtin local -r __zoxide_pwd_tmp="$(__zoxide_pwd)"
+    if [ -z "${__zoxide_pwd_old}" ]; then
+        __zoxide_pwd_old="${__zoxide_pwd_tmp}"
+    elif [ "${__zoxide_pwd_old}" != "${__zoxide_pwd_tmp}" ]; then
+        __zoxide_pwd_old="${__zoxide_pwd_tmp}"
+        zoxide add -- "${__zoxide_pwd_old}"
+    fi
+    return "${__zoxide_retval}"
+}
+
+# Initialize hook.
+if [ "${__zoxide_hooked}" != '1' ]; then
+    __zoxide_hooked='1'
+    PROMPT_COMMAND="__zoxide_hook;${PROMPT_COMMAND:+${PROMPT_COMMAND}}"
+fi
+
+# =============================================================================
+#
+# When using zoxide with --no-aliases, alias these internal functions as
+# desired.
+#
+
+# Jump to a directory using only keywords.
+function __zoxide_z() {
+    if [ "$#" -eq 0 ]; then
+        __zoxide_cd ~
+    elif [ "$#" -eq 1 ] && [ "$1" = '-' ]; then
+        if [ -n "${OLDPWD}" ]; then
+            __zoxide_cd "${OLDPWD}"
+        else
+            # shellcheck disable=SC2016
+            \builtin printf 'zoxide: $OLDPWD is not set\n'
+            return 1
+        fi
+    elif [ "$#" -eq 1 ] && [ -d "$1" ]; then
+        __zoxide_cd "$1"
+    else
+        \builtin local __zoxide_result
+        __zoxide_result="$(zoxide query --exclude "$(__zoxide_pwd)" -- "$@")" && __zoxide_cd "${__zoxide_result}"
+    fi
+}
+
+# Jump to a directory using interactive search.
+function __zoxide_zi() {
+    \builtin local __zoxide_result
+    __zoxide_result="$(zoxide query -i -- "$@")" && __zoxide_cd "${__zoxide_result}"
+}
+
+# =============================================================================
+#
+# Convenient aliases for zoxide. Disable these using --no-aliases.
+#
+
+# Remove definitions.
+function __zoxide_unset() {
+    # shellcheck disable=SC1001
+    \builtin unset -f "$@" &>/dev/null
+    # shellcheck disable=SC1001
+    \builtin unset -v "$@" &>/dev/null
+}
+
+__zoxide_unset 'z'
+function z() {
+    __zoxide_z "$@"
+}
+
+__zoxide_unset 'zi'
+function zi() {
+    __zoxide_zi "$@"
+}
+
+eval "$(zoxide init bash)"
+
+# starship
+eval "$(starship init bash)"
+
