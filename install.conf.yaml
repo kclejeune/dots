@@ -1,15 +1,20 @@
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+      - [git submodule update --init --recursive, Installing submodules]
 - defaults:
-    link:
-      create: true
-      relink: true
-      force: true
-- clean: ['~', '~/.config']
+      link:
+          create: true
+          relink: true
+          force: true
+- clean: ["~", "~/.config"]
 - link:
-    ~/.config/:
-      glob: true
-      path: config/*
-    ~/.bashrc: ~/.config/bash/bashrc
-    ~/.asdf:
-      path: asdf
+      ~/.config/:
+          glob: true
+          path: config/*
+      ~/.bashrc: ~/.config/bash/bashrc
+      ~/.asdf:
+          path: asdf
+- shell:
+      - [
+            awk -f tools.awk ~/.config/asdf/tool-versions,
+            Installing asdf packages,
+        ]
