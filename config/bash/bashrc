@@ -40,7 +40,7 @@ export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -200'"
 ###########################################################
 
 # update dotfile symlinks from version control
-alias dotlink="$HOME/system/install"
+alias dotlink="$HOME/dots/install"
 alias vim="nvim"
 
 ###########################################################
