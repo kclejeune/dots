@@ -10,5 +10,6 @@
     ~/.config/:
       glob: true
       path: config/*
+    ~/.bashrc: ~/.config/bash/bashrc
     ~/.asdf:
       path: asdf

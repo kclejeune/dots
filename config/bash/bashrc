@@ -1,3 +1,8 @@
+# source global environment
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
 #########################################################
 # Environment Variables
 #########################################################

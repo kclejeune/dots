@@ -3,7 +3,8 @@
 A set of non-sudo, HPC compatible dotfiles and config settings.
 
 ```bash
-git clone https://github.com/kclejeune/system.git && ./system/preferences.sh && ./system/install && ./system/packages.sh
+git clone https://github.com/kclejeune/system.git
+./system/install
 ```
 
 ## Dotfile Symlinking
@@ -14,8 +15,4 @@ To relink dotfiles upon modification, re-run
 ```bash
 ./system/install
 ```
-
-## Package Installation
-
-This uses Homebrew Bundle for package installation.  Packages are kept in [Brewfile](./Brewfile).
 
