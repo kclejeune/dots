@@ -2,5 +2,6 @@
 .vimrwhist
 .vscode/
 node_modules/
+config/nvim/coc-settings.json
 id_rsa
 id_rsa.pub

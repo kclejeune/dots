@@ -1,13 +1,11 @@
 " ###########################################
 " PLUGINS
 " ###########################################
-
 " Install Vim-Plug if it isn't already there
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
     silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     autocmd VimEnter * PlugInstall --sync | source $HOME/.config/nvim/init.vim
 endif
-
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
     " Ignore language specific/IDE-esque features when using vscode
@@ -24,6 +22,7 @@ call plug#begin('~/.vim/plugged')
         Plug 'joshdick/onedark.vim'
         Plug 'alvan/vim-closetag'
     endif
+nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
 call plug#end()
 
 " ###########################################
@@ -109,13 +108,7 @@ let $FZF_DEFAULT_COMMAND =  "fd --type f"
 let $FZF_DEFAULT_OPTS="--layout=reverse --preview 'bat --style=changes {}' --preview-window right:50%"
 
 " }}}
-" nvim-fzf {{{
-lua<<EOF
-local fzf = require("fzf")
 
-EOF
-
-" }}}
 " vim-closetag {{{
 " filenames like *.xml, *.html, *.xhtml, ...
 " These are the file extensions where this plugin is enabled.
@@ -161,79 +154,7 @@ let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
 
 " }}}
-" nvim-treesitter {{{
-lua<<EOF
-require('nvim-treesitter.configs').setup {
-  highlight = {
-    enable = true,
-  },
-  incremental_selection = {
-    enable = true,
-    keymaps = {
-      init_selection = "gnn",
-      node_incremental = "grn",
-      scope_incremental = "grc",
-      node_decremental = "grm",
-    },
-  },
-  indent = {
-    enable = true,
-  },
-}
-
-vim.o.foldmethod = 'expr'
-vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
-
-EOF
-
-" }}}
-" nvim-treesitter-textobjects {{{
-lua<<EOF
-require'nvim-treesitter.configs'.setup {
-  textobjects = {
-    select = {
-      enable = true,
-      keymaps = {
-        ["af"] = "@function.outer",
-        ["if"] = "@function.inner",
-        ["ac"] = "@class.outer",
-        ["ic"] = "@class.inner",
-      },
-    },
-    move = {
-      enable = true,
-      goto_next_start = {
-        ["]m"] = "@function.outer",
-        ["]]"] = "@class.outer",
-      },
-      goto_next_end = {
-        ["]M"] = "@function.outer",
-        ["]["] = "@class.outer",
-      },
-      goto_previous_start = {
-        ["[m"] = "@function.outer",
-        ["[["] = "@class.outer",
-      },
-      goto_previous_end = {
-        ["[M"] = "@function.outer",
-        ["[]"] = "@class.outer",
-      },
-    },
-    swap = {
-      enable = true,
-      swap_next = {
-        ["<leader>a"] = "@parameter.inner",
-      },
-      swap_previous = {
-        ["<leader>A"] = "@parameter.inner",
-      },
-    },
-  },
-}
-
-EOF
-
-" }}}
+"
 " awesome-vim-colorschemes {{{
 " #####################################################
 " COLOR SCHEME SETTINGS
