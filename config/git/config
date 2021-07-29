@@ -2,3 +2,5 @@
 	name = Kennan LeJeune
 	email = kennan@case.edu
 
+[push]
+	default = simple
