@@ -103,12 +103,7 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 " set proper keybinding
 nnoremap <silent> <C-p> :call fzf#vim#files('.', {'options': '--prompt ""'})<CR>
 " nnoremap <silent> <leader>b :Buffers<CR>
-
-let $FZF_DEFAULT_COMMAND =  "fd --type f"
-let $FZF_DEFAULT_OPTS="--layout=reverse --preview 'bat --style=changes {}' --preview-window right:50%"
-
-" }}}
-
+"
 " vim-closetag {{{
 " filenames like *.xml, *.html, *.xhtml, ...
 " These are the file extensions where this plugin is enabled.

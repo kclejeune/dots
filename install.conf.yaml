@@ -11,6 +11,8 @@
           glob: true
           path: config/*
       ~/.bashrc: ~/.config/bash/bashrc
+      ~/.fzf.bash: ~/.config/bash/fzf.bash
+      ~/.gitconfig: ~/.config/git/config
       ~/.asdf:
           path: asdf
 - shell:
