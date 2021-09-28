@@ -15,8 +15,4 @@
       ~/.gitconfig: ~/.config/git/config
       ~/.asdf:
           path: asdf
-- shell:
-      - [
-            awk -f tools.awk ~/.config/asdf/tool-versions,
-            Installing asdf packages,
-        ]
+

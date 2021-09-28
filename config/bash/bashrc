@@ -53,11 +53,11 @@ alias dotlink="$HOME/dots/install"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # dienv environment managementt
-eval "$(direnv hook bash)"
+([[ command -v direnv ]] >> /dev/null) && eval "$(direnv hook bash)"
 # starship shell prompt
-eval "$(starship init bash)"
+([[ starship -v direnv ]] >> /dev/null) && eval "$(starship init bash)"
 # zoxide autojump
-eval "$(zoxide init bash)"
+ ([[ zoxide -v direnv ]] >> /dev/null) && eval "$(zoxide init bash)"
 
 # Custom user functions
 
@@ -67,7 +67,7 @@ mkshell() {
 }
 
 # if we're in an interactive ssh shell and NOT in a tmux shell, reconnect or create an ssh_tmux session
-if [[ $- == *i* ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_CONNECTION" ]]; then
-    # tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
-    tmux new-session -A -s ssh_tmux
-fi
+# if [[ $- == *i* ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_CONNECTION" ]]; then
+#     # tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
+#     tmux new-session -A -s ssh_tmux
+# fi
