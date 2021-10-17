@@ -6,3 +6,6 @@
 	path = asdf
 	url = https://github.com/asdf-vm/asdf
 	ignore = all
+[submodule "neofetch"]
+	path = neofetch
+	url = ./neofetch

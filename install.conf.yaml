@@ -13,6 +13,6 @@
       ~/.bashrc: ~/.config/bash/bashrc
       ~/.fzf.bash: ~/.config/bash/fzf.bash
       ~/.gitconfig: ~/.config/git/config
-      ~/.asdf:
-          path: asdf
+      ~/.asdf: asdf
+      ~/.local/bin/neofetch: neofetch/neofetch
 
