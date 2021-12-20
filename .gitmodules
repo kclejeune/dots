@@ -8,4 +8,4 @@
 	ignore = all
 [submodule "neofetch"]
 	path = neofetch
-	url = ./neofetch
+	url = https://github.com/dylanaraps/neofetch
