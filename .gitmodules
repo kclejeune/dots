@@ -2,10 +2,7 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "asdf"]
-	path = asdf
-	url = https://github.com/asdf-vm/asdf
-	ignore = all
 [submodule "neofetch"]
 	path = neofetch
 	url = https://github.com/dylanaraps/neofetch
+

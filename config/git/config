@@ -1,6 +1,19 @@
 [user]
 	name = Kennan LeJeune
-	email = kennan@case.edu
+	email = kennan.lejeune@jhuapl.edu
 
 [push]
 	default = simple
+
+[diff]
+    external = difft
+    tool = difftastic
+
+[difftool]
+    prompt = false
+
+[difftool "difftastic"]
+    cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+    difftool = true

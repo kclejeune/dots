@@ -1,6 +1,6 @@
 # source global environment
 if [ -f /etc/bashrc ]; then
-        . /etc/bashrc
+    . /etc/bashrc
 fi
 
 #########################################################
@@ -16,22 +16,24 @@ export DEFAULT_USER="$(whoami)"
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export PATH=$HOME/.local/bin:$HOME/bin:$PATH
+export PLAIN_SHELL=$(basename ${SHELL:-/bin/bash})
+
+#########################################################
+# User Env Config
+#########################################################
 
 # user stuff
 export TERM=xterm-256color
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
-export ASDF_CONFIG_DIR=$XDG_CONFIG_HOME/asdf
-export ASDF_DATA_DIR=$XDG_DATA_HOME/asdf
-export ASDF_CONFIG_FILE=$ASDF_CONFIG_DIR/asdfrc
-export ASDF_DEFAULT_TOOL_VERSIONS_FILENAME=$ASDF_CONFIG_DIR/tool-versions
 export BAT_CONFIG_PATH=$XDG_CONFIG_HOME/bat/bat.conf
+
+export FZF_DEFAULT_COMMAND="rg --files --no-ignore --hidden --follow --glob '!.git/*'"
 # --files: List files that would be searched but do not search
 # --no-ignore: Do not respect .gitignore, etc...
 # --hidden: Search hidden files and folders
 # --follow: Follow symlinks
 # --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
-export FZF_DEFAULT_COMMAND="rg --files --no-ignore --hidden --follow --glob '!.git/*'"
 export FZF_ALT_C_OPTS="--height 50% --border --preview 'head -n 200 {}'"
 export FZF_CTRL_T_OPTS="--height 50% --border --preview 'head -n 200 {}'"
 
@@ -46,20 +48,14 @@ alias dotlink="$HOME/dots/install"
 # Environment Configuration
 ###########################################################
 
-# asdf plugin manager
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+# activate mise
+eval "$(mise activate $PLAIN_SHELL)"
+eval "$(mise hook-env -s $PLAIN_SHELL)"
 
-# fzf completions & keybindings
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# dienv environment managementt
-(command -v direnv >> /dev/null) && eval "$(direnv hook bash)"
-# starship shell prompt
-((command -v direnv && command -v starship) >> /dev/null) && eval "$(starship init bash)"
-# zoxide autojump
-((command -v direnv && command -v zoxide) >> /dev/null) && eval "$(zoxide init bash)"
-
+# setup tools
+eval "$(starship init $PLAIN_SHELL)"
+eval "$(fzf --$PLAIN_SHELL)"
+eval "$(direnv hook $PLAIN_SHELL)"
 
 # interactive srun wrapper for hpc
 mkshell() {
@@ -71,3 +67,7 @@ mkshell() {
 #     # tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
 #     tmux new-session -A -s ssh_tmux
 # fi
+
+alias sq="squeue -u $USER"
+alias vim="nvim"
+

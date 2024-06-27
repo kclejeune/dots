@@ -1,18 +1,17 @@
 - shell:
       - [git submodule update --init --recursive, Installing submodules]
+      - [sh ./install_mise.sh, Installing Mise]
 - defaults:
       link:
           create: true
           relink: true
           force: true
-- clean: ["~", "~/.config"]
+- clean: ["~", "~/.config", "~/.local/bin"]
 - link:
       ~/.config/:
           glob: true
           path: config/*
       ~/.bashrc: ~/.config/bash/bashrc
-      ~/.fzf.bash: ~/.config/bash/fzf.bash
       ~/.gitconfig: ~/.config/git/config
-      ~/.asdf: asdf
       ~/.local/bin/neofetch: neofetch/neofetch
 
