@@ -56,6 +56,7 @@ eval "$(mise hook-env -s $PLAIN_SHELL)"
 eval "$(starship init $PLAIN_SHELL)"
 eval "$(fzf --$PLAIN_SHELL)"
 eval "$(direnv hook $PLAIN_SHELL)"
+eval "$(zoxide init $PLAIN_SHELL)"
 
 # interactive srun wrapper for hpc
 mkshell() {
